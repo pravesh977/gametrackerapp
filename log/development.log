@@ -545,3 +545,179 @@ Processing by GamesController#show as HTML
 Completed 200 OK in 36ms (Views: 7.2ms | ActiveRecord: 9.5ms)
 
 
+Started GET "/" for ::1 at 2017-06-14 23:51:17 -0400
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+LoadError (cannot load such file -- Httparty):
+  
+app/controllers/games_controller.rb:2:in `<class:GamesController>'
+app/controllers/games_controller.rb:1:in `<top (required)>'
+Started GET "/" for ::1 at 2017-06-14 23:52:10 -0400
+  
+LoadError (cannot load such file -- Httparty):
+  
+app/controllers/games_controller.rb:3:in `<class:GamesController>'
+app/controllers/games_controller.rb:1:in `<top (required)>'
+Started GET "/" for ::1 at 2017-06-14 23:52:47 -0400
+  
+LoadError (cannot load such file -- Httparty):
+  
+app/controllers/games_controller.rb:1:in `<top (required)>'
+Started GET "/" for ::1 at 2017-06-14 23:54:56 -0400
+  [1m[35m (6.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+LoadError (cannot load such file -- Httparty):
+  
+app/controllers/games_controller.rb:3:in `<class:GamesController>'
+app/controllers/games_controller.rb:1:in `<top (required)>'
+Started GET "/" for ::1 at 2017-06-14 23:58:29 -0400
+  
+LoadError (cannot load such file -- httparty):
+  
+app/controllers/games_controller.rb:3:in `<class:GamesController>'
+app/controllers/games_controller.rb:1:in `<top (required)>'
+Started GET "/" for ::1 at 2017-06-14 23:58:46 -0400
+Processing by GamesController#root as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for ::1 at 2017-06-15 00:05:28 -0400
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (21.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 111ms (Views: 31.2ms | ActiveRecord: 46.8ms)
+
+
+Started GET "/games" for ::1 at 2017-06-15 00:05:46 -0400
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 46ms (Views: 32.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/games" for ::1 at 2017-06-15 00:06:12 -0400
+  
+LoadError (cannot load such file -- httparty):
+  
+app/controllers/games_controller.rb:1:in `<top (required)>'
+Started GET "/games" for ::1 at 2017-06-15 00:06:24 -0400
+  
+LoadError (cannot load such file -- Httparty):
+  
+app/controllers/games_controller.rb:1:in `<top (required)>'
+Started GET "/games" for ::1 at 2017-06-15 00:11:36 -0400
+  [1m[35m (7.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+LoadError (cannot load such file -- Httparty):
+  
+app/controllers/games_controller.rb:1:in `<top (required)>'
+Started GET "/games" for ::1 at 2017-06-15 00:11:40 -0400
+  
+LoadError (cannot load such file -- Httparty):
+  
+app/controllers/games_controller.rb:1:in `<top (required)>'
+Started GET "/games" for ::1 at 2017-06-15 00:11:55 -0400
+  
+ActionController::RoutingError (undefined method `import' for main:Object):
+  
+app/controllers/games_controller.rb:1:in `<top (required)>'
+Started GET "/" for ::1 at 2017-06-15 00:12:24 -0400
+  
+LoadError (cannot load such file -- httparty):
+  
+app/controllers/games_controller.rb:1:in `<top (required)>'
+Started GET "/" for ::1 at 2017-06-15 00:12:48 -0400
+  
+LoadError (cannot load such file -- httparty):
+  
+app/controllers/games_controller.rb:1:in `<top (required)>'
+Started GET "/" for ::1 at 2017-06-15 00:13:13 -0400
+  
+LoadError (cannot load such file -- Httparty):
+  
+app/controllers/games_controller.rb:1:in `<top (required)>'
+Started GET "/" for ::1 at 2017-06-15 00:14:26 -0400
+  
+ActionController::RoutingError (uninitialized constant HTTParty):
+  
+app/controllers/games_controller.rb:1:in `<top (required)>'
+Started GET "/" for ::1 at 2017-06-15 00:14:54 -0400
+  
+ActionController::RoutingError (uninitialized constant GamesController::HTTParty):
+  
+app/controllers/games_controller.rb:5:in `<class:GamesController>'
+app/controllers/games_controller.rb:3:in `<top (required)>'
+Started GET "/" for ::1 at 2017-06-15 00:15:18 -0400
+  
+ActionController::RoutingError (uninitialized constant GamesController::HTTParty):
+  
+app/controllers/games_controller.rb:5:in `<class:GamesController>'
+app/controllers/games_controller.rb:3:in `<top (required)>'
+Started GET "/" for ::1 at 2017-06-15 00:21:09 -0400
+  [1m[35m (6.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#root as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for ::1 at 2017-06-15 00:21:26 -0400
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (1.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 86ms (Views: 58.7ms | ActiveRecord: 17.2ms)
+
+
+Started GET "/games" for ::1 at 2017-06-15 00:21:51 -0400
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 29ms (Views: 14.6ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/" for ::1 at 2017-06-15 00:23:45 -0400
+  
+AbstractController::ActionNotFound (The action 'root' could not be found for GamesController):
+  
+actionpack (5.1.1) lib/abstract_controller/base.rb:119:in `process'
+actionpack (5.1.1) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.1) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.1) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.1) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for ::1 at 2017-06-15 00:23:59 -0400
+Processing by GamesController#root as HTML
+Completed 200 OK in 627ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-06-15 00:25:07 -0400
+Processing by GamesController#root as HTML
+Completed 200 OK in 172ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+

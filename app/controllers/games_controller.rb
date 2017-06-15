@@ -1,7 +1,14 @@
+require 'httparty'
+
 class GamesController < ApplicationController
-  
+
+  # def root
+  #   render plain: "API Document"
+  # end
+
   def root
-    render plain: "API Document"
+    @response = HTTParty.get("http://api.stackexchange.com/2.2/questions?site=stackoverflow")
+    render json: { data: @response }
   end
 
 

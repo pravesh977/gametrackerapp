@@ -1,24 +1,14 @@
-.App {
+.searchedlistclass {
+  list-style-type: none;
+  text-align:center;
+  font-size: 28px;
+}
+.searchform {
   text-align: center;
+  /*margin: 0 auto;*/
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.searchform input {
+ background: cyan;
+ font-size: 24px;
+ text-align:center;
 }
