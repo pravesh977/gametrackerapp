@@ -41,12 +41,12 @@ class App extends Component {
 
   searchedRender() {
     if(this.state.searchedLoaded===true) {
-      console.log('loaded man');
-      console.log(this.state.searchedGames[2].name);
+      // console.log('loaded man');
+      // console.log(this.state.searchedGames[2].name);
       return(
       <ul>{this.state.searchedGames.map((elem)=>{
           return(
-          <SearchedList searchedname={elem.name} key={elem.id}/>
+          <SearchedList searchedname={elem.name} key={elem.id} searchedgameid={elem.id} />
           )     
       })}
     </ul>
@@ -62,7 +62,7 @@ class App extends Component {
           <input type = "text" 
                   value = {this.state.inputgamesearch}
                   onChange = {this.handleGameSearchChange}
-                  placeholder = "Enter Game Name" /><br/>
+                  placeholder = "Enter Game Name" /><br/><br/>
           <input type="submit" value ="search game" />
         </form> 
         {this.searchedRender()}

@@ -1,8 +1,9 @@
-.searchedlistclass {
-  list-style-type: none;
+/*.searchedlistclass {
+  margin:20px auto;
+  font-size: 50px;
+  color:red;
   text-align:center;
-  font-size: 28px;
-}
+}*/
 .searchform {
   text-align: center;
   /*margin: 0 auto;*/
@@ -11,4 +12,12 @@
  background: cyan;
  font-size: 24px;
  text-align:center;
+}
+.secondSearchForm {
+  text-align:center;
+  font-size: 50px;
+}
+.secondSearchForm input {
+  font-size: 30px;
+  color:red;
 }
