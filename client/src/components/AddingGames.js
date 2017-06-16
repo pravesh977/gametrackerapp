@@ -12,22 +12,34 @@ class AddingGames extends Component {
   handleStatusChange(event) {
     this.setState({gamestatus: event.target.value})
     console.log(this.state.gamestatus)
+    
   }
 
   handleGameSubmit(event) {
     event.preventDefault();
     console.log(this.state.gamestatus);
-    fetch('localhost:3001/games', {
+    fetch('https://localhost:3001/games', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
-
-
-
-        status: event.target.status.value,
+        gamename: this.props.gameDetailsData[0].name,
+        summary: this.props.gameDetailsData[0].summary,
+        rating: this.props.gameDetailsData[0].aggregated_rating,
+        imageurl: this.props.gameDetailsData[0].cover.url,
+        status_id: event.target.status.value,
       })
     })
   }
+
+//     handleGameSubmit(event) {
+//     event.preventDefault();
+//     console.log(this.state.gamestatus);
+//     fetch('https://localhost:3001/games')
+// .then((response)=> {
+// response.json()
+// .then((mydata)=>{
+//     console.log(mydata);
+// })})};
 
   render() {
     //console.log(this.props.gameDetailsData, "here is my final data")

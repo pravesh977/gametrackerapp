@@ -850,3 +850,31 @@ Processing by GamesController#index as HTML
 Completed 200 OK in 183ms (Views: 44.7ms | ActiveRecord: 119.8ms)
 
 
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT  "games".* FROM "games" ORDER BY "games"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/games" for ::1 at 2017-06-16 01:34:17 -0400
+  [1m[35m (12.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 40ms (Views: 15.7ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/games" for ::1 at 2017-06-16 09:27:09 -0400
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (13.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 51ms (Views: 15.7ms | ActiveRecord: 26.3ms)
+
+
+Started GET "/games" for ::1 at 2017-06-16 09:38:21 -0400
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 53ms (Views: 36.1ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/games/2" for ::1 at 2017-06-16 09:38:24 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 29ms (Views: 1.0ms | ActiveRecord: 7.2ms)
+
+
