@@ -18,23 +18,26 @@ class AddingGames extends Component {
   handleGameSubmit(event) {
     event.preventDefault();
     console.log(this.state.gamestatus);
-    fetch('https://localhost:3001/games', {
+
+    fetch('/games', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
-        gamename: this.props.gameDetailsData[0].name,
-        summary: this.props.gameDetailsData[0].summary,
-        rating: this.props.gameDetailsData[0].aggregated_rating,
-        imageurl: this.props.gameDetailsData[0].cover.url,
-        status_id: event.target.status.value,
-      })
-    })
+        // gamedata: {
+          gamename: this.props.gameDetailsData[0].name,
+          summary: this.props.gameDetailsData[0].summary,
+          rating: this.props.gameDetailsData[0].aggregated_rating,
+          imageurl: this.props.gameDetailsData[0].cover.url,
+          status_id: event.target.status.value,
+        // }
+      })    
+    }).catch(err => console.log('boooohooooo ',err))   
   }
 
 //     handleGameSubmit(event) {
 //     event.preventDefault();
 //     console.log(this.state.gamestatus);
-//     fetch('https://localhost:3001/games')
+//     fetch('/games')
 // .then((response)=> {
 // response.json()
 // .then((mydata)=>{
