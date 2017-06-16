@@ -30,7 +30,7 @@ class App extends Component {
       }).then((response)=> {
       response.json()
       .then((mydata)=>{
-      console.log(mydata);
+      console.log(mydata, 'searched data');
       this.setState({
         searchedGames: mydata,
         searchedLoaded: true,
@@ -57,7 +57,6 @@ class App extends Component {
   render() {
     return (
       <div className="mainpage">
-      
         <form className="searchform" onSubmit={this.handleSearchButton}>
           <input type = "text" 
                   value = {this.state.inputgamesearch}

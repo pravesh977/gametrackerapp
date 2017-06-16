@@ -4,6 +4,9 @@
   color:red;
   text-align:center;
 }*/
+body {
+  box-sizing: border-box;
+}
 .searchform {
   text-align: center;
   /*margin: 0 auto;*/
@@ -20,4 +23,26 @@
 .secondSearchForm input {
   font-size: 30px;
   color:red;
+}
+
+.secondSearchForm input:hover {
+  cursor:pointer;
+}
+
+.formForPost {
+  padding: 50px;
+}
+.formForPost .gametitle {
+  font-size: 28px;
+}
+.formForPost .gamesummary {
+  font-size: 24px;
+  font-style: italic;
+  text-align:justify;
+}
+.formForPost .gamerating {
+  font-size: 24px;
+}
+.formForPost .releasedate {
+  font-size: 24px;
 }
