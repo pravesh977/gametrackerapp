@@ -4,6 +4,7 @@ class AddingGames extends Component {
     super();
     this.state = {
       gamestatus: "",
+      gameAdded: false,
     }
     this.handleStatusChange = this.handleStatusChange.bind(this);
     this.handleGameSubmit = this.handleGameSubmit.bind(this);
@@ -31,7 +32,8 @@ class AddingGames extends Component {
           status_id: event.target.status.value,
         // }
       })    
-    }).catch(err => console.log('boooohooooo ',err))   
+    }).catch(err => console.log('boooohooooo ',err))
+    this.setState({gameAdded: true})   
   }
 
 //     handleGameSubmit(event) {

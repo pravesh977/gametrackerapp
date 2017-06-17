@@ -11,7 +11,12 @@ import PlayingComp from './PlayingComp';
 import CompletedComp from './CompletedComp';
 import DroppedComp from './DroppedComp';
 
+
 class MyGamesList extends Component {
+
+
+  
+
   render() {
     return (
       <div className="listdiv">

@@ -1472,3 +1472,605 @@ Processing by GamesController#index as */*
 Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.9ms)
 
 
+Started GET "/games" for 127.0.0.1 at 2017-06-17 11:30:45 -0400
+  [1m[35m (9.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 38ms (Views: 19.6ms | ActiveRecord: 6.9ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 11:40:23 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Battlefield 1", "summary"=>"Discover classic Battlefield gameplay with epic multiplayer and an adventure-filled campaign. Experience the Dawn of All-Out War, Only in Battlefield 1.  \n  \nFight your way through epic battles going from tight urban combat in a besieged French city to big open spaces in the Italian Alps or frantic combats in the Arabic sand dunes. Experience large-scale battles as infantry or piloting vehicles on land, air and sea, from the tanks and bikes on the ground, to bi-planes and gigantic battleships.  \n  \nDiscover a new world at war through an adventure-filled campaign, or join in epic multiplayer battles with up to 64 players. Adapt your tactics and strategy to the earth-shattering, dynamic environments and destruction.", "rating"=>89.0952380952381, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/iyydljzdli44mdiyaeva.jpg", "status_id"=>"3", "game"=>{"gamename"=>"Battlefield 1", "summary"=>"Discover classic Battlefield gameplay with epic multiplayer and an adventure-filled campaign. Experience the Dawn of All-Out War, Only in Battlefield 1.  \n  \nFight your way through epic battles going from tight urban combat in a besieged French city to big open spaces in the Italian Alps or frantic combats in the Arabic sand dunes. Experience large-scale battles as infantry or piloting vehicles on land, air and sea, from the tanks and bikes on the ground, to bi-planes and gigantic battleships.  \n  \nDiscover a new world at war through an adventure-filled campaign, or join in epic multiplayer battles with up to 64 players. Adapt your tactics and strategy to the earth-shattering, dynamic environments and destruction.", "rating"=>89.0952380952381, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/iyydljzdli44mdiyaeva.jpg", "status_id"=>"3"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.5ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (7.4ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "rating", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["gamename", "Battlefield 1"], ["summary", "Discover classic Battlefield gameplay with epic multiplayer and an adventure-filled campaign. Experience the Dawn of All-Out War, Only in Battlefield 1.  \n  \nFight your way through epic battles going from tight urban combat in a besieged French city to big open spaces in the Italian Alps or frantic combats in the Arabic sand dunes. Experience large-scale battles as infantry or piloting vehicles on land, air and sea, from the tanks and bikes on the ground, to bi-planes and gigantic battleships.  \n  \nDiscover a new world at war through an adventure-filled campaign, or join in epic multiplayer battles with up to 64 players. Adapt your tactics and strategy to the earth-shattering, dynamic environments and destruction."], ["rating", 89], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/iyydljzdli44mdiyaeva.jpg"], ["status_id", 3], ["created_at", "2017-06-17 15:40:23.981049"], ["updated_at", "2017-06-17 15:40:23.981049"]]
+  [1m[35m (11.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 216ms (Views: 7.1ms | ActiveRecord: 65.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 11:43:59 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 24ms (Views: 19.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 11:49:23 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 34ms (Views: 26.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 11:49:34 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 11:50:43 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 67ms (Views: 63.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 11:51:16 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 14:28:14 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (52.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 169ms (Views: 105.7ms | ActiveRecord: 52.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 14:40:35 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (32.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 107ms (Views: 63.3ms | ActiveRecord: 32.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 14:42:41 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 51ms (Views: 43.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 14:52:21 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 56ms (Views: 34.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 14:55:11 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (12.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 67ms (Views: 49.5ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 15:00:52 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (13.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 116ms (Views: 97.5ms | ActiveRecord: 13.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 15:01:00 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (8.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 30ms (Views: 21.2ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 15:04:38 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (7.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 111ms (Views: 87.9ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 15:04:41 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (6.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 22ms (Views: 15.5ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 15:05:29 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 15:18:16 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (7.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 87ms (Views: 53.5ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 15:19:00 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (12.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 53ms (Views: 31.9ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 15:19:45 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (5.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 69ms (Views: 62.1ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 15:27:03 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 112ms (Views: 102.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/games" for ::1 at 2017-06-17 15:27:44 -0400
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 28ms (Views: 21.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 15:32:07 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 93ms (Views: 80.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 15:32:44 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Middle-earth: Shadow of War", "summary"=>"Go behind enemy lines to forge your army, conquer Fortresses and dominate Mordor from within. Experience how the award winning Nemesis System creates unique personal stories with every enemy and follower, and confront the full power of the Dark Lord Sauron and his Ringwraiths in this epic new story of Middle-earth.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/xjqnuckrivp1iwvpneh5.jpg", "status_id"=>"4", "game"=>{"gamename"=>"Middle-earth: Shadow of War", "summary"=>"Go behind enemy lines to forge your army, conquer Fortresses and dominate Mordor from within. Experience how the award winning Nemesis System creates unique personal stories with every enemy and follower, and confront the full power of the Dark Lord Sauron and his Ringwraiths in this epic new story of Middle-earth.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/xjqnuckrivp1iwvpneh5.jpg", "status_id"=>"4"}}
+  [1m[35m (25.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (33.8ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (45.2ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["gamename", "Middle-earth: Shadow of War"], ["summary", "Go behind enemy lines to forge your army, conquer Fortresses and dominate Mordor from within. Experience how the award winning Nemesis System creates unique personal stories with every enemy and follower, and confront the full power of the Dark Lord Sauron and his Ringwraiths in this epic new story of Middle-earth."], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/xjqnuckrivp1iwvpneh5.jpg"], ["status_id", 4], ["created_at", "2017-06-17 19:32:44.560968"], ["updated_at", "2017-06-17 19:32:44.560968"]]
+  [1m[35m (16.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (13.4ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 390ms (Views: 16.2ms | ActiveRecord: 164.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 15:32:55 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 15:34:41 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (23.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 101ms (Views: 69.9ms | ActiveRecord: 23.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 15:35:47 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (19.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 163ms (Views: 134.5ms | ActiveRecord: 19.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 15:35:55 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 127ms (Views: 123.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 15:42:57 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 70ms (Views: 55.5ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/games/$%7Bid%7D" for 127.0.0.1 at 2017-06-17 15:43:04 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"${id}"}
+  [1m[36mGame Load (23.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 60ms (Views: 0.4ms | ActiveRecord: 23.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 15:43:07 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (6.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 32ms (Views: 25.1ms | ActiveRecord: 6.4ms)
+
+
+Started DELETE "/games/$%7Bid%7D" for 127.0.0.1 at 2017-06-17 15:43:30 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"${id}"}
+  [1m[36mGame Load (18.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 27ms (Views: 1.9ms | ActiveRecord: 18.6ms)
+
+
+Started DELETE "/games/$%7Bid%7D" for 127.0.0.1 at 2017-06-17 15:46:18 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"${id}"}
+  [1m[36mGame Load (2.8ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 47ms (Views: 10.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 15:46:24 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 32ms (Views: 29.7ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/games/$%7Bid%7D" for 127.0.0.1 at 2017-06-17 15:46:28 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"${id}"}
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 15:47:27 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 56ms (Views: 41.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 15:47:48 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 82ms (Views: 70.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 15:48:29 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 31ms (Views: 23.9ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/games/$%7Bid%7D" for 127.0.0.1 at 2017-06-17 15:48:32 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"${id}"}
+  [1m[36mGame Load (6.8ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 15:50:11 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 66ms (Views: 50.7ms | ActiveRecord: 2.8ms)
+
+
+Started DELETE "/games/$%7Bid%7D" for 127.0.0.1 at 2017-06-17 15:50:18 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"${id}"}
+  [1m[36mGame Load (29.1ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 39ms (Views: 0.2ms | ActiveRecord: 29.1ms)
+
+
+Started GET "/games/5" for ::1 at 2017-06-17 15:53:06 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mGame Load (12.1ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 43ms (Views: 10.8ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 15:55:14 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 64ms (Views: 56.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 15:55:26 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/games/8" for 127.0.0.1 at 2017-06-17 15:55:30 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"8"}
+  [1m[36mGame Load (1.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (36.7ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 8]]
+  [1m[35m (6.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (15.7ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 112ms (Views: 10.6ms | ActiveRecord: 61.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 15:56:46 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 108ms (Views: 96.6ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/games/undefined" for 127.0.0.1 at 2017-06-17 15:56:50 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mGame Load (13.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 19ms (Views: 0.5ms | ActiveRecord: 13.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 15:58:52 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 54ms (Views: 45.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 15:59:07 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 35ms (Views: 32.4ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/games/undefined" for 127.0.0.1 at 2017-06-17 15:59:17 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mGame Load (7.1ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 12ms (Views: 0.8ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:01:14 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 44ms (Views: 37.2ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/games/undefined" for 127.0.0.1 at 2017-06-17 16:01:18 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 16:01:57 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Gran Turismo Sport", "summary"=>"Welcome to the future of motorsports – the definitive motor racing experience is back and better than ever only on PlayStation 4.  \n  \nGran Turismo Sport is the world’s first racing experience to be built from the ground up to bring global, online competitions sanctioned by the highest governing body of international motorsports, the FIA (Federation International Automobile). Create your legacy as you represent and compete for your home country or favorite manufacturer.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/qssi7lw3gfm2zfoo3osf.jpg", "status_id"=>"1", "game"=>{"gamename"=>"Gran Turismo Sport", "summary"=>"Welcome to the future of motorsports – the definitive motor racing experience is back and better than ever only on PlayStation 4.  \n  \nGran Turismo Sport is the world’s first racing experience to be built from the ground up to bring global, online competitions sanctioned by the highest governing body of international motorsports, the FIA (Federation International Automobile). Create your legacy as you represent and compete for your home country or favorite manufacturer.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/qssi7lw3gfm2zfoo3osf.jpg", "status_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (45.0ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (7.6ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["gamename", "Gran Turismo Sport"], ["summary", "Welcome to the future of motorsports – the definitive motor racing experience is back and better than ever only on PlayStation 4.  \n  \nGran Turismo Sport is the world’s first racing experience to be built from the ground up to bring global, online competitions sanctioned by the highest governing body of international motorsports, the FIA (Federation International Automobile). Create your legacy as you represent and compete for your home country or favorite manufacturer."], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/qssi7lw3gfm2zfoo3osf.jpg"], ["status_id", 1], ["created_at", "2017-06-17 20:01:57.769503"], ["updated_at", "2017-06-17 20:01:57.769503"]]
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 92ms (Views: 6.6ms | ActiveRecord: 60.2ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 16:02:22 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Gran Turismo Sport", "summary"=>"Welcome to the future of motorsports – the definitive motor racing experience is back and better than ever only on PlayStation 4.  \n  \nGran Turismo Sport is the world’s first racing experience to be built from the ground up to bring global, online competitions sanctioned by the highest governing body of international motorsports, the FIA (Federation International Automobile). Create your legacy as you represent and compete for your home country or favorite manufacturer.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/qssi7lw3gfm2zfoo3osf.jpg", "status_id"=>"1", "game"=>{"gamename"=>"Gran Turismo Sport", "summary"=>"Welcome to the future of motorsports – the definitive motor racing experience is back and better than ever only on PlayStation 4.  \n  \nGran Turismo Sport is the world’s first racing experience to be built from the ground up to bring global, online competitions sanctioned by the highest governing body of international motorsports, the FIA (Federation International Automobile). Create your legacy as you represent and compete for your home country or favorite manufacturer.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/qssi7lw3gfm2zfoo3osf.jpg", "status_id"=>"1"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.6ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (7.6ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["gamename", "Gran Turismo Sport"], ["summary", "Welcome to the future of motorsports – the definitive motor racing experience is back and better than ever only on PlayStation 4.  \n  \nGran Turismo Sport is the world’s first racing experience to be built from the ground up to bring global, online competitions sanctioned by the highest governing body of international motorsports, the FIA (Federation International Automobile). Create your legacy as you represent and compete for your home country or favorite manufacturer."], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/qssi7lw3gfm2zfoo3osf.jpg"], ["status_id", 1], ["created_at", "2017-06-17 20:02:22.833346"], ["updated_at", "2017-06-17 20:02:22.833346"]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 42ms (Views: 14.7ms | ActiveRecord: 15.7ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 16:02:45 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Gran Turismo 7", "summary"=>"Gran Turismo 7 is an upcoming racing video game developed by Polyphony Digital. It will be the seventh major release and thirteenth game overall in the Gran Turismo video game series. Series creator Kazunori Yamauchi has hinted a 2016 release for the game.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/ho65fyaeo1q5rcoc7abf.jpg", "status_id"=>"1", "game"=>{"gamename"=>"Gran Turismo 7", "summary"=>"Gran Turismo 7 is an upcoming racing video game developed by Polyphony Digital. It will be the seventh major release and thirteenth game overall in the Gran Turismo video game series. Series creator Kazunori Yamauchi has hinted a 2016 release for the game.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/ho65fyaeo1q5rcoc7abf.jpg", "status_id"=>"1"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.5ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["gamename", "Gran Turismo 7"], ["summary", "Gran Turismo 7 is an upcoming racing video game developed by Polyphony Digital. It will be the seventh major release and thirteenth game overall in the Gran Turismo video game series. Series creator Kazunori Yamauchi has hinted a 2016 release for the game."], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/ho65fyaeo1q5rcoc7abf.jpg"], ["status_id", 1], ["created_at", "2017-06-17 20:02:45.673289"], ["updated_at", "2017-06-17 20:02:45.673289"]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 30ms (Views: 14.3ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:02:50 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 49ms (Views: 48.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:03:00 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/games/undefined" for 127.0.0.1 at 2017-06-17 16:03:06 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/games/undefined" for 127.0.0.1 at 2017-06-17 16:03:07 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/games/undefined" for 127.0.0.1 at 2017-06-17 16:03:07 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/games/undefined" for 127.0.0.1 at 2017-06-17 16:03:16 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/games/undefined" for 127.0.0.1 at 2017-06-17 16:03:16 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:03:23 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 1.5ms)
+
+
+Started DELETE "/games/undefined" for 127.0.0.1 at 2017-06-17 16:03:30 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mGame Load (7.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 7.3ms)
+
+
+Started DELETE "/games/undefined" for 127.0.0.1 at 2017-06-17 16:03:30 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/games/undefined" for 127.0.0.1 at 2017-06-17 16:03:32 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/games/undefined" for 127.0.0.1 at 2017-06-17 16:03:34 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:03:36 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/games/undefined" for 127.0.0.1 at 2017-06-17 16:03:45 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/games/undefined" for 127.0.0.1 at 2017-06-17 16:03:46 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/games/undefined" for 127.0.0.1 at 2017-06-17 16:03:48 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:03:51 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 16:04:18 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"The Legend of Zelda: Breath of the Wild", "summary"=>"Step into a world of discovery, exploration and adventure in The Legend of Zelda: Breath of the Wild, a boundary-breaking new game in the acclaimed series. Travel across fields, through forests and to mountain peaks as you discover what has become of the ruined kingdom of Hyrule in this stunning open-air adventure.", "rating"=>98.5, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/jk9el4ksl4c7qwaex2y5.jpg", "status_id"=>"1", "game"=>{"gamename"=>"The Legend of Zelda: Breath of the Wild", "summary"=>"Step into a world of discovery, exploration and adventure in The Legend of Zelda: Breath of the Wild, a boundary-breaking new game in the acclaimed series. Travel across fields, through forests and to mountain peaks as you discover what has become of the ruined kingdom of Hyrule in this stunning open-air adventure.", "rating"=>98.5, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/jk9el4ksl4c7qwaex2y5.jpg", "status_id"=>"1"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.5ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (13.3ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "rating", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["gamename", "The Legend of Zelda: Breath of the Wild"], ["summary", "Step into a world of discovery, exploration and adventure in The Legend of Zelda: Breath of the Wild, a boundary-breaking new game in the acclaimed series. Travel across fields, through forests and to mountain peaks as you discover what has become of the ruined kingdom of Hyrule in this stunning open-air adventure."], ["rating", 98], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/jk9el4ksl4c7qwaex2y5.jpg"], ["status_id", 1], ["created_at", "2017-06-17 20:04:18.440433"], ["updated_at", "2017-06-17 20:04:18.440433"]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (10.0ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 48ms (Views: 5.7ms | ActiveRecord: 30.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:04:23 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/games/undefined" for 127.0.0.1 at 2017-06-17 16:04:29 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:04:34 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (6.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 12ms (Views: 6.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:04:51 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:05:23 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 84ms (Views: 76.6ms | ActiveRecord: 1.6ms)
+
+
+Started DELETE "/games/12" for 127.0.0.1 at 2017-06-17 16:05:32 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"12"}
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 12]]
+  [1m[35m (10.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (9.7ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 34ms (Views: 7.8ms | ActiveRecord: 21.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:05:34 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/games/11" for 127.0.0.1 at 2017-06-17 16:05:37 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"11"}
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 11]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (7.4ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 25ms (Views: 5.6ms | ActiveRecord: 14.6ms)
+
+
+Started DELETE "/games/10" for 127.0.0.1 at 2017-06-17 16:05:39 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 10]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (8.3ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 25ms (Views: 6.7ms | ActiveRecord: 15.2ms)
+
+
+Started DELETE "/games/9" for 127.0.0.1 at 2017-06-17 16:05:41 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (6.5ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 9]]
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (6.5ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 31ms (Views: 5.5ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:05:44 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:06:33 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/games/5" for ::1 at 2017-06-17 16:06:43 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mGame Load (6.0ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 8ms (Views: 0.8ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/games/" for ::1 at 2017-06-17 16:06:45 -0400
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.4ms)
+
+
