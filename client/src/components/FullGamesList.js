@@ -9,33 +9,55 @@ class FullGamesList extends Component {
     }
     this.renderFullList = this.renderFullList.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
+    this.fetchAllGames = this.fetchAllGames.bind(this);
   }
 
+
+
 componentDidMount() {
-  fetch('/games')
+  this.fetchAllGames();
+}
+
+  fetchAllGames() {
+      fetch('/games')
   .then((response)=> {
       response.json()
-      .then((mydata)=>{
+      .then((jsonResp)=>{
       //console.log(mydata, 'my database stuff');
       this.setState({
         listLoaded: true,
-        mydata: mydata,
+        mydata: jsonResp,
       })
      })
     })
   }
 
 
-  handleDelete(id) {
-  fetch(`/games/${id}`,{
+  // handleDelete(id) {
+  // fetch(`/games/${id}`,{
+  //   method: 'DELETE',
+  // }).then(res=>{
+  //   res.json()
+  //   .then((jsonResp)=>{
+  //     console.log('deleted')
+  //       this.setState({
+  //         mydata: jsonResp,
+  //       })     
+  //   }).catch(err => console.log(err));
+  // })
+  // }
+
+
+    handleDelete(id) {
+  fetch(`/games/${id}`, {
     method: 'DELETE',
-  }).then((res)=>{
-    res.json()
-    .then((jsonResp)=>{
-      console.log('deleted')
-    }).catch(err => console.log(err));
-  })
-  }
+      })
+        .then((response)=>{
+    if (response.status===200) {
+      this.fetchAllGames();
+    }
+    })
+    }
   
 
   renderFullList() {
@@ -54,6 +76,7 @@ componentDidMount() {
                       handleDelete={this.handleDelete}
                       id={elem.id}
                       wholestuff={elem}
+                      listLoaded={this.state.listLoaded}
             />
           )
         })

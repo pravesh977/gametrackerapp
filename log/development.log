@@ -2074,3 +2074,555 @@ Processing by GamesController#index as HTML
 Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/games/" for ::1 at 2017-06-17 16:08:06 -0400
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 87ms (Views: 19.8ms | ActiveRecord: 57.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:08:13 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 58ms (Views: 45.6ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:08:39 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 19ms (Views: 14.3ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 16:08:54 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Tokyo Dark", "summary"=>"Tokyo Dark is an anime-style horror adventure game combining point and click and visual novel genres. The story follows Detective Itō accross Tokyo, searching for the truth behind her partner's strange disappearance. Featuring puzzles, stat management, and difficult decisions, Tokyo Dark puts the narrative in the hands of the player. Players' decisions change their character, opening or locking options and leading to multiple endings.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/j6iydx5d50zwy66kx2io.jpg", "status_id"=>"1", "game"=>{"gamename"=>"Tokyo Dark", "summary"=>"Tokyo Dark is an anime-style horror adventure game combining point and click and visual novel genres. The story follows Detective Itō accross Tokyo, searching for the truth behind her partner's strange disappearance. Featuring puzzles, stat management, and difficult decisions, Tokyo Dark puts the narrative in the hands of the player. Players' decisions change their character, opening or locking options and leading to multiple endings.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/j6iydx5d50zwy66kx2io.jpg", "status_id"=>"1"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.6ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (7.9ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["gamename", "Tokyo Dark"], ["summary", "Tokyo Dark is an anime-style horror adventure game combining point and click and visual novel genres. The story follows Detective Itō accross Tokyo, searching for the truth behind her partner's strange disappearance. Featuring puzzles, stat management, and difficult decisions, Tokyo Dark puts the narrative in the hands of the player. Players' decisions change their character, opening or locking options and leading to multiple endings."], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/j6iydx5d50zwy66kx2io.jpg"], ["status_id", 1], ["created_at", "2017-06-17 20:08:54.700536"], ["updated_at", "2017-06-17 20:08:54.700536"]]
+  [1m[35m (12.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 110ms (Views: 4.7ms | ActiveRecord: 27.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:08:59 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/games/" for ::1 at 2017-06-17 16:09:22 -0400
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/games/13" for 127.0.0.1 at 2017-06-17 16:09:54 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 13]]
+  [1m[35m (11.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (1.4ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 35ms (Views: 6.8ms | ActiveRecord: 14.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:09:57 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:11:57 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (5.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 75ms (Views: 63.1ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:12:02 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:13:46 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 36ms (Views: 28.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:14:03 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 16:14:21 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Sniper: Ghost Warrior 3", "summary"=>"Go behind enemy lines with the ultimate modern military shooter. Play as an American sniper dropped in Georgia, near Russian border. Choose your own path to accomplish your missions across an unforgiven open world.", "rating"=>53.3333333333333, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/lri4zn5t1gkjd9wkeekw.jpg", "status_id"=>"2", "game"=>{"gamename"=>"Sniper: Ghost Warrior 3", "summary"=>"Go behind enemy lines with the ultimate modern military shooter. Play as an American sniper dropped in Georgia, near Russian border. Choose your own path to accomplish your missions across an unforgiven open world.", "rating"=>53.3333333333333, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/lri4zn5t1gkjd9wkeekw.jpg", "status_id"=>"2"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.9ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (10.7ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "rating", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["gamename", "Sniper: Ghost Warrior 3"], ["summary", "Go behind enemy lines with the ultimate modern military shooter. Play as an American sniper dropped in Georgia, near Russian border. Choose your own path to accomplish your missions across an unforgiven open world."], ["rating", 53], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/lri4zn5t1gkjd9wkeekw.jpg"], ["status_id", 2], ["created_at", "2017-06-17 20:14:21.266777"], ["updated_at", "2017-06-17 20:14:21.266777"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 37ms (Views: 4.2ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:14:26 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/games/14" for 127.0.0.1 at 2017-06-17 16:14:30 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 14]]
+  [1m[35m (8.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 20ms (Views: 4.9ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:14:50 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 16:15:27 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Flipping Death", "summary"=>"Help the ghosts with their curious problems while also solving the mystery surrounding your own demise in this new puzzling adventure from Zoink Games.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/od2szgivbhfpty9yurzo.jpg", "status_id"=>"1", "game"=>{"gamename"=>"Flipping Death", "summary"=>"Help the ghosts with their curious problems while also solving the mystery surrounding your own demise in this new puzzling adventure from Zoink Games.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/od2szgivbhfpty9yurzo.jpg", "status_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.4ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (6.8ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["gamename", "Flipping Death"], ["summary", "Help the ghosts with their curious problems while also solving the mystery surrounding your own demise in this new puzzling adventure from Zoink Games."], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/od2szgivbhfpty9yurzo.jpg"], ["status_id", 1], ["created_at", "2017-06-17 20:15:27.783529"], ["updated_at", "2017-06-17 20:15:27.783529"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 24ms (Views: 6.1ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:15:33 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/games/15" for 127.0.0.1 at 2017-06-17 16:15:36 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 15]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 21ms (Views: 8.2ms | ActiveRecord: 8.7ms)
+
+
+Started DELETE "/games/15" for 127.0.0.1 at 2017-06-17 16:15:37 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/games/15" for 127.0.0.1 at 2017-06-17 16:15:37 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/games/15" for 127.0.0.1 at 2017-06-17 16:15:37 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:15:40 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 16:16:03 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Death Trash", "summary"=>"\"A modern post-apocalyptic role-playing game with action elements and a focus on the narrative and dialogue. A world of cyberpunk, science fiction, horror, the grotesque and trash-talk humor.\"\n\n\"Use realtime combat, dialogue, item crafting and psi powers to explore and survive this post-apocalyptic mystic world with larger-than-life beings.\n\nChoose one character from a diverse selection and customize him or her through stats and making choices. A friend can join anytime for a session of local co-op.\n\nThe game is built around respecting your time and freedom.\"", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/ejky5vxnavmk8symcx7y.jpg", "status_id"=>"2", "game"=>{"gamename"=>"Death Trash", "summary"=>"\"A modern post-apocalyptic role-playing game with action elements and a focus on the narrative and dialogue. A world of cyberpunk, science fiction, horror, the grotesque and trash-talk humor.\"\n\n\"Use realtime combat, dialogue, item crafting and psi powers to explore and survive this post-apocalyptic mystic world with larger-than-life beings.\n\nChoose one character from a diverse selection and customize him or her through stats and making choices. A friend can join anytime for a session of local co-op.\n\nThe game is built around respecting your time and freedom.\"", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/ejky5vxnavmk8symcx7y.jpg", "status_id"=>"2"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.8ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["gamename", "Death Trash"], ["summary", "\"A modern post-apocalyptic role-playing game with action elements and a focus on the narrative and dialogue. A world of cyberpunk, science fiction, horror, the grotesque and trash-talk humor.\"\n\n\"Use realtime combat, dialogue, item crafting and psi powers to explore and survive this post-apocalyptic mystic world with larger-than-life beings.\n\nChoose one character from a diverse selection and customize him or her through stats and making choices. A friend can join anytime for a session of local co-op.\n\nThe game is built around respecting your time and freedom.\""], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/ejky5vxnavmk8symcx7y.jpg"], ["status_id", 2], ["created_at", "2017-06-17 20:16:03.239221"], ["updated_at", "2017-06-17 20:16:03.239221"]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (1.5ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 22ms (Views: 6.2ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:16:08 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:17:59 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 44ms (Views: 36.1ms | ActiveRecord: 1.5ms)
+
+
+Started DELETE "/games/16" for 127.0.0.1 at 2017-06-17 16:18:03 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 16]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 17ms (Views: 4.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:18:17 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:18:41 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 16:18:50 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Star Citizen", "summary"=>"Star Citizen is an upcoming space trading and combat simulator video game for Microsoft Windows. Star Citizen will consist of two main components: first person space combat and trading in a massively multiplayer persistent universe and customizable private servers (known as Star Citizen), and a branching single-player and drop-in co-operative multiplayer campaign (known as Squadron 42). The game will feature Oculus Rift support.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/q7zgwvwtthyvig9oiwpo.jpg", "status_id"=>"1", "game"=>{"gamename"=>"Star Citizen", "summary"=>"Star Citizen is an upcoming space trading and combat simulator video game for Microsoft Windows. Star Citizen will consist of two main components: first person space combat and trading in a massively multiplayer persistent universe and customizable private servers (known as Star Citizen), and a branching single-player and drop-in co-operative multiplayer campaign (known as Squadron 42). The game will feature Oculus Rift support.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/q7zgwvwtthyvig9oiwpo.jpg", "status_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.7ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["gamename", "Star Citizen"], ["summary", "Star Citizen is an upcoming space trading and combat simulator video game for Microsoft Windows. Star Citizen will consist of two main components: first person space combat and trading in a massively multiplayer persistent universe and customizable private servers (known as Star Citizen), and a branching single-player and drop-in co-operative multiplayer campaign (known as Squadron 42). The game will feature Oculus Rift support."], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/q7zgwvwtthyvig9oiwpo.jpg"], ["status_id", 1], ["created_at", "2017-06-17 20:18:50.735399"], ["updated_at", "2017-06-17 20:18:50.735399"]]
+  [1m[35m (7.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 28ms (Views: 5.1ms | ActiveRecord: 10.6ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 16:18:56 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Cosmic Star Heroine", "summary"=>"\"3 exotic planets to explore. Aliens. Robots. Magic. Forbidden technology. Ruined Worlds. Ghosts. Long-lost secrets. Conspiracies. A galactic threat. And one brave heroine to make things right. Cosmic Star Heroine is an exciting new RPG from the creators of Cthulhu Saves the World.\"", "rating"=>75, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/uhbq94gpfboz2kl2vzlh.jpg", "status_id"=>"1", "game"=>{"gamename"=>"Cosmic Star Heroine", "summary"=>"\"3 exotic planets to explore. Aliens. Robots. Magic. Forbidden technology. Ruined Worlds. Ghosts. Long-lost secrets. Conspiracies. A galactic threat. And one brave heroine to make things right. Cosmic Star Heroine is an exciting new RPG from the creators of Cthulhu Saves the World.\"", "rating"=>75, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/uhbq94gpfboz2kl2vzlh.jpg", "status_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.4ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "rating", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["gamename", "Cosmic Star Heroine"], ["summary", "\"3 exotic planets to explore. Aliens. Robots. Magic. Forbidden technology. Ruined Worlds. Ghosts. Long-lost secrets. Conspiracies. A galactic threat. And one brave heroine to make things right. Cosmic Star Heroine is an exciting new RPG from the creators of Cthulhu Saves the World.\""], ["rating", 75], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/uhbq94gpfboz2kl2vzlh.jpg"], ["status_id", 1], ["created_at", "2017-06-17 20:18:56.678387"], ["updated_at", "2017-06-17 20:18:56.678387"]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 20ms (Views: 5.9ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:19:17 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:20:17 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 52ms (Views: 31.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:20:27 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/games/18" for 127.0.0.1 at 2017-06-17 16:20:30 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"18"}
+  [1m[36mGame Load (1.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (6.4ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 18]]
+  [1m[35m (6.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 40ms (Views: 5.8ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:20:33 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:25:36 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 127ms (Views: 109.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:30:19 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 40ms (Views: 28.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:34:49 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (3.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 46ms (Views: 32.0ms | ActiveRecord: 3.8ms)
+
+
+Started DELETE "/games/17" for 127.0.0.1 at 2017-06-17 16:35:04 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mGame Load (2.8ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 17]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 34ms (Views: 5.1ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:36:40 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 41ms (Views: 30.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:37:47 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 56ms (Views: 54.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:40:07 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 116ms (Views: 101.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:40:21 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 16:40:36 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Tokyo Dark", "summary"=>"Tokyo Dark is an anime-style horror adventure game combining point and click and visual novel genres. The story follows Detective Itō accross Tokyo, searching for the truth behind her partner's strange disappearance. Featuring puzzles, stat management, and difficult decisions, Tokyo Dark puts the narrative in the hands of the player. Players' decisions change their character, opening or locking options and leading to multiple endings.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/j6iydx5d50zwy66kx2io.jpg", "status_id"=>"3", "game"=>{"gamename"=>"Tokyo Dark", "summary"=>"Tokyo Dark is an anime-style horror adventure game combining point and click and visual novel genres. The story follows Detective Itō accross Tokyo, searching for the truth behind her partner's strange disappearance. Featuring puzzles, stat management, and difficult decisions, Tokyo Dark puts the narrative in the hands of the player. Players' decisions change their character, opening or locking options and leading to multiple endings.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/j6iydx5d50zwy66kx2io.jpg", "status_id"=>"3"}}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.9ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (7.7ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["gamename", "Tokyo Dark"], ["summary", "Tokyo Dark is an anime-style horror adventure game combining point and click and visual novel genres. The story follows Detective Itō accross Tokyo, searching for the truth behind her partner's strange disappearance. Featuring puzzles, stat management, and difficult decisions, Tokyo Dark puts the narrative in the hands of the player. Players' decisions change their character, opening or locking options and leading to multiple endings."], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/j6iydx5d50zwy66kx2io.jpg"], ["status_id", 3], ["created_at", "2017-06-17 20:40:36.264936"], ["updated_at", "2017-06-17 20:40:36.264936"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 62ms (Views: 9.1ms | ActiveRecord: 10.5ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 16:40:52 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Tokyo Tattoo Girls", "summary"=>"After a calamity befalls Tokyo, some of the city’s survivors find themselves with powerful abilities bestowed on them by colorful tattoos. To create peace, the city has been divided into 23 wards, each controlled by a powerful group known as “Kumi.”", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/ted7wc3b9jupxbclv0kj.jpg", "status_id"=>"2", "game"=>{"gamename"=>"Tokyo Tattoo Girls", "summary"=>"After a calamity befalls Tokyo, some of the city’s survivors find themselves with powerful abilities bestowed on them by colorful tattoos. To create peace, the city has been divided into 23 wards, each controlled by a powerful group known as “Kumi.”", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/ted7wc3b9jupxbclv0kj.jpg", "status_id"=>"2"}}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (6.5ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (7.9ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["gamename", "Tokyo Tattoo Girls"], ["summary", "After a calamity befalls Tokyo, some of the city’s survivors find themselves with powerful abilities bestowed on them by colorful tattoos. To create peace, the city has been divided into 23 wards, each controlled by a powerful group known as “Kumi.”"], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/ted7wc3b9jupxbclv0kj.jpg"], ["status_id", 2], ["created_at", "2017-06-17 20:40:52.814909"], ["updated_at", "2017-06-17 20:40:52.814909"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (1.7ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 34ms (Views: 6.5ms | ActiveRecord: 18.0ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 16:41:02 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Tokyo Ghoul - To Eat or Not To Eat", "summary"=>"A Custom Card Game based off of Tokyo Ghoul, through and through.     \n     \nGame is web based, by the way. You can play it now if you want but if you do, you won't get the updated Starter Collection nor Starter Decks that will be available when the release happens. You'll just have to stick with buying packs from the Market. They're all free by the way, you start off with, I think, 25k coins.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/czqwkklpgndagrws77dd.jpg", "status_id"=>"2", "game"=>{"gamename"=>"Tokyo Ghoul - To Eat or Not To Eat", "summary"=>"A Custom Card Game based off of Tokyo Ghoul, through and through.     \n     \nGame is web based, by the way. You can play it now if you want but if you do, you won't get the updated Starter Collection nor Starter Decks that will be available when the release happens. You'll just have to stick with buying packs from the Market. They're all free by the way, you start off with, I think, 25k coins.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/czqwkklpgndagrws77dd.jpg", "status_id"=>"2"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (6.2ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (7.1ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["gamename", "Tokyo Ghoul - To Eat or Not To Eat"], ["summary", "A Custom Card Game based off of Tokyo Ghoul, through and through.     \n     \nGame is web based, by the way. You can play it now if you want but if you do, you won't get the updated Starter Collection nor Starter Decks that will be available when the release happens. You'll just have to stick with buying packs from the Market. They're all free by the way, you start off with, I think, 25k coins."], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/czqwkklpgndagrws77dd.jpg"], ["status_id", 2], ["created_at", "2017-06-17 20:41:02.692579"], ["updated_at", "2017-06-17 20:41:02.692579"]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 33ms (Views: 6.5ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:41:09 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (6.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 12ms (Views: 5.1ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:43:21 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (10.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 77ms (Views: 58.6ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:45:09 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:49:01 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:49:35 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (8.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 36ms (Views: 26.8ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:52:45 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 72ms (Views: 55.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 16:54:57 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (3.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 55ms (Views: 44.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 17:00:15 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 83ms (Views: 71.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 17:03:49 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 50ms (Views: 41.6ms | ActiveRecord: 1.7ms)
+
+
+Started DELETE "/games/21" for 127.0.0.1 at 2017-06-17 17:03:54 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"21"}
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (6.9ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 21]]
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (4.0ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 37ms (Views: 9.1ms | ActiveRecord: 18.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 17:03:54 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/games/20" for 127.0.0.1 at 2017-06-17 17:04:01 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"20"}
+  [1m[36mGame Load (6.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 20]]
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 24ms (Views: 6.1ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 17:04:01 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/games/19" for 127.0.0.1 at 2017-06-17 17:04:02 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"19"}
+  [1m[36mGame Load (11.9ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 19]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 26ms (Views: 4.6ms | ActiveRecord: 18.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 17:04:02 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 17:04:19 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 17:04:45 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 17:04:57 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"I Have No Mouth, and I Must Scream", "summary"=>"I Have No Mouth, and I Must Scream is a point-and-click adventure game based upon Harlan Ellison's short story of the same title.\nThe game's story is set in a world where an evil computer named AM has destroyed all of humanity except for five people, whom he has been keeping alive and torturing for the past 109 years. Each survivor has a fatal flaw in their character, and in an attempt to crush their spirits, AM has constructed a metaphorical adventure for each that preys upon their weaknesses. To succeed in the game, the player must make choices to prove that humans are better than machines, because they have the ability to redeem themselves. Woven into the fabric of the story are ethical dilemmas dealing with issues such as insanity, rape, paranoia and genocide.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/aecufx900agkpjwxficc.jpg", "status_id"=>"1", "game"=>{"gamename"=>"I Have No Mouth, and I Must Scream", "summary"=>"I Have No Mouth, and I Must Scream is a point-and-click adventure game based upon Harlan Ellison's short story of the same title.\nThe game's story is set in a world where an evil computer named AM has destroyed all of humanity except for five people, whom he has been keeping alive and torturing for the past 109 years. Each survivor has a fatal flaw in their character, and in an attempt to crush their spirits, AM has constructed a metaphorical adventure for each that preys upon their weaknesses. To succeed in the game, the player must make choices to prove that humans are better than machines, because they have the ability to redeem themselves. Woven into the fabric of the story are ethical dilemmas dealing with issues such as insanity, rape, paranoia and genocide.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/aecufx900agkpjwxficc.jpg", "status_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (1.0ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (13.5ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["gamename", "I Have No Mouth, and I Must Scream"], ["summary", "I Have No Mouth, and I Must Scream is a point-and-click adventure game based upon Harlan Ellison's short story of the same title.\nThe game's story is set in a world where an evil computer named AM has destroyed all of humanity except for five people, whom he has been keeping alive and torturing for the past 109 years. Each survivor has a fatal flaw in their character, and in an attempt to crush their spirits, AM has constructed a metaphorical adventure for each that preys upon their weaknesses. To succeed in the game, the player must make choices to prove that humans are better than machines, because they have the ability to redeem themselves. Woven into the fabric of the story are ethical dilemmas dealing with issues such as insanity, rape, paranoia and genocide."], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/aecufx900agkpjwxficc.jpg"], ["status_id", 1], ["created_at", "2017-06-17 21:04:57.714005"], ["updated_at", "2017-06-17 21:04:57.714005"]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 42ms (Views: 6.6ms | ActiveRecord: 21.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 17:05:01 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/games/22" for 127.0.0.1 at 2017-06-17 17:05:10 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"22"}
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (7.2ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 22]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 22ms (Views: 4.2ms | ActiveRecord: 14.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 17:05:11 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 17:05:29 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Dead But Alive! Southern England", "summary"=>"Dead But Alive is a zombie survival adventure/simulation set in South England. After a lifetime of danger and daring in the remote battlezones of the 21st century, this is the last thing you expected. As an ex-military officer looking to rebuild your relationship with your teenage daughter", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/aotpvriror7ug8jw0cpp.jpg", "status_id"=>"1", "game"=>{"gamename"=>"Dead But Alive! Southern England", "summary"=>"Dead But Alive is a zombie survival adventure/simulation set in South England. After a lifetime of danger and daring in the remote battlezones of the 21st century, this is the last thing you expected. As an ex-military officer looking to rebuild your relationship with your teenage daughter", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/aotpvriror7ug8jw0cpp.jpg", "status_id"=>"1"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.2ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (12.0ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["gamename", "Dead But Alive! Southern England"], ["summary", "Dead But Alive is a zombie survival adventure/simulation set in South England. After a lifetime of danger and daring in the remote battlezones of the 21st century, this is the last thing you expected. As an ex-military officer looking to rebuild your relationship with your teenage daughter"], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/aotpvriror7ug8jw0cpp.jpg"], ["status_id", 1], ["created_at", "2017-06-17 21:05:29.435961"], ["updated_at", "2017-06-17 21:05:29.435961"]]
+  [1m[35m (21.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (1.4ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 49ms (Views: 5.4ms | ActiveRecord: 35.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 17:05:39 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/games/23" for 127.0.0.1 at 2017-06-17 17:05:42 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"23"}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 23]]
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (13.0ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 29ms (Views: 5.7ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 17:05:42 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 17:06:08 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.3ms)
+
+
