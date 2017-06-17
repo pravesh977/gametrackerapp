@@ -11,6 +11,11 @@ class GamesController < ApplicationController
   #   render json: { data: @response }
   # end
 
+  # def fetchingroute
+  #   @response = HTTParty.get("https://igdbcom-internet-game-database-v1.p.mashape.com/games/?fields=name&limit=10&offset=0&order=release_dates.date%3Adesc&search=${this.state.inputgamesearch}")
+  #       data: @response
+  # end
+  
 
   def index
     @games = Game.all

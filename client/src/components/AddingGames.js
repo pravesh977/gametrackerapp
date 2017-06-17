@@ -3,16 +3,16 @@ class AddingGames extends Component {
   constructor() {
     super();
     this.state = {
-      gamestatus:""
+      gamestatus: "",
     }
     this.handleStatusChange = this.handleStatusChange.bind(this);
     this.handleGameSubmit = this.handleGameSubmit.bind(this);
   }
 
   handleStatusChange(event) {
-    this.setState({gamestatus: event.target.value})
-    console.log(this.state.gamestatus)
-    
+    this.setState({gamestatus: event.target.value}, () => {
+      console.log(this.state.gamestatus)
+    })
   }
 
   handleGameSubmit(event) {

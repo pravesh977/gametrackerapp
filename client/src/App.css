@@ -46,3 +46,25 @@ body {
 .formForPost .releasedate {
   font-size: 24px;
 }
+.listdiv li{
+  list-style-type: none;
+}
+.mycrudlist {
+  width:45%;
+  float:left;
+}
+.clearingdiv {
+  clear:left;
+}
+.searchedul {
+  width:45%;
+  float:right;
+}
+.myeachgame {
+  font-size: 24px;
+  text-align:center;
+  border:5px black solid;
+}
+.myeachgame li {
+  margin-top:10px;
+}

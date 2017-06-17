@@ -1045,3 +1045,430 @@ Processing by GamesController#index as HTML
 Completed 200 OK in 48ms (Views: 27.9ms | ActiveRecord: 19.5ms)
 
 
+Started POST "/games" for 127.0.0.1 at 2017-06-16 12:21:54 -0400
+  [1m[35m (11.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Ōkami", "summary"=>"Set sometime in classical Japanese history, Ōkami combines several Japanese mythology and folklore to tell the story of how the land was saved from darkness by the Shinto sun goddess named Amaterasu, who took the form of a white wolf with celestial markings covering its fur. It features a distinct sumi-e-inspired cel-shaded visual style and the Celestial Brush, a gesture-system used to perform miracles.", "rating"=>89.6, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/tihhh6kdcpha6hfwvgwc.jpg", "status_id"=>"1", "game"=>{"gamename"=>"Ōkami", "summary"=>"Set sometime in classical Japanese history, Ōkami combines several Japanese mythology and folklore to tell the story of how the land was saved from darkness by the Shinto sun goddess named Amaterasu, who took the form of a white wolf with celestial markings covering its fur. It features a distinct sumi-e-inspired cel-shaded visual style and the Celestial Brush, a gesture-system used to perform miracles.", "rating"=>89.6, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/tihhh6kdcpha6hfwvgwc.jpg", "status_id"=>"1"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.5ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (9.7ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "rating", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["gamename", "Ōkami"], ["summary", "Set sometime in classical Japanese history, Ōkami combines several Japanese mythology and folklore to tell the story of how the land was saved from darkness by the Shinto sun goddess named Amaterasu, who took the form of a white wolf with celestial markings covering its fur. It features a distinct sumi-e-inspired cel-shaded visual style and the Celestial Brush, a gesture-system used to perform miracles."], ["rating", 89], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/tihhh6kdcpha6hfwvgwc.jpg"], ["status_id", 1], ["created_at", "2017-06-16 16:21:55.527008"], ["updated_at", "2017-06-16 16:21:55.527008"]]
+  [1m[35m (10.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 88ms (Views: 4.8ms | ActiveRecord: 33.5ms)
+
+
+Started GET "/games" for ::1 at 2017-06-16 12:22:05 -0400
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 20ms (Views: 9.7ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/games" for ::1 at 2017-06-16 12:49:03 -0400
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (20.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 73ms (Views: 21.8ms | ActiveRecord: 39.5ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-16 12:49:38 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"FIFA 17", "summary"=>"For the first time ever in FIFA, live your story on and off the pitch as the Premier League’s next rising star, Alex Hunter. Play on any club in the Premier league, for authentic managers and alongside some of the best players on the planet. Experience brand new worlds in FIFA 17, all while navigating your way through the emotional highs and lows of The Journey.", "rating"=>86.5263157894737, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/cmtplicvdajycqx2vz6t.jpg", "status_id"=>"2", "game"=>{"gamename"=>"FIFA 17", "summary"=>"For the first time ever in FIFA, live your story on and off the pitch as the Premier League’s next rising star, Alex Hunter. Play on any club in the Premier league, for authentic managers and alongside some of the best players on the planet. Experience brand new worlds in FIFA 17, all while navigating your way through the emotional highs and lows of The Journey.", "rating"=>86.5263157894737, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/cmtplicvdajycqx2vz6t.jpg", "status_id"=>"2"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (1.1ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (34.1ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "rating", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["gamename", "FIFA 17"], ["summary", "For the first time ever in FIFA, live your story on and off the pitch as the Premier League’s next rising star, Alex Hunter. Play on any club in the Premier league, for authentic managers and alongside some of the best players on the planet. Experience brand new worlds in FIFA 17, all while navigating your way through the emotional highs and lows of The Journey."], ["rating", 86], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/cmtplicvdajycqx2vz6t.jpg"], ["status_id", 2], ["created_at", "2017-06-16 16:49:38.971977"], ["updated_at", "2017-06-16 16:49:38.971977"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 236ms (Views: 4.8ms | ActiveRecord: 69.6ms)
+
+
+Started GET "/games" for ::1 at 2017-06-16 12:49:46 -0400
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (3.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 13ms (Views: 8.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-16 17:00:30 -0400
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#index as */*
+  [1m[36mGame Load (19.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 85ms (Views: 26.5ms | ActiveRecord: 48.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-16 17:00:53 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 83ms (Views: 65.7ms | ActiveRecord: 16.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-16 17:01:21 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 89ms (Views: 67.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-16 17:02:44 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 68ms (Views: 34.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-16 17:07:01 -0400
+  [1m[35m (7.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 40ms (Views: 16.8ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-16 17:07:07 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 29ms (Views: 19.0ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-16 17:14:15 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 40ms (Views: 33.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-16 17:17:29 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 88ms (Views: 79.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-16 17:18:00 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-16 17:18:35 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 83ms (Views: 76.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-16 17:18:40 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-16 17:35:36 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (260.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 1099ms (Views: 820.1ms | ActiveRecord: 260.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-16 17:35:51 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 41ms (Views: 31.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-16 17:35:58 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-16 17:43:40 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 63ms (Views: 53.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-16 17:43:57 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (36.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 68ms (Views: 29.0ms | ActiveRecord: 36.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-16 17:44:28 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 217ms (Views: 213.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-16 17:45:00 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (6.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 24ms (Views: 17.3ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-16 17:45:04 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-16 17:46:12 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (9.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 91ms (Views: 74.3ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-16 17:46:24 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (6.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 14ms (Views: 6.6ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-16 17:47:19 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (6.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 43ms (Views: 36.2ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 09:45:00 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 55ms (Views: 44.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 09:45:15 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (7.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 20ms (Views: 11.2ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 09:45:18 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 09:47:14 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 34ms (Views: 27.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 09:59:56 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (5.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 68ms (Views: 52.5ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 10:25:11 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (11.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 84ms (Views: 54.5ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 10:27:31 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (7.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 71ms (Views: 52.0ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 10:28:21 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (7.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 76ms (Views: 67.4ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 10:29:34 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 74ms (Views: 61.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 10:30:47 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (12.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 63ms (Views: 48.6ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 10:31:05 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (12.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 50ms (Views: 37.2ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 10:32:45 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (10.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 105ms (Views: 86.6ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 10:33:29 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 29ms (Views: 23.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 10:33:45 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (6.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 42ms (Views: 34.1ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 10:34:53 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (4.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 85ms (Views: 74.8ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 10:36:11 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 28ms (Views: 26.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 10:37:08 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 10:44:19 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 143ms (Views: 69.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 10:51:40 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (3.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 75ms (Views: 64.1ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 10:53:48 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (4.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 109ms (Views: 90.0ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 10:54:47 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 65ms (Views: 63.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 10:56:08 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 70ms (Views: 55.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 10:56:12 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 87ms (Views: 85.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 10:56:44 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 10:56:53 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (11.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 30ms (Views: 17.5ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 10:56:59 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (6.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 15ms (Views: 8.3ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 10:57:01 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 10:58:31 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (14.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 60ms (Views: 39.4ms | ActiveRecord: 14.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 11:00:22 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (8.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 48ms (Views: 31.3ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 11:00:52 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 21ms (Views: 15.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 11:02:48 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 53ms (Views: 43.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 11:06:09 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 129ms (Views: 108.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 11:06:12 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 24ms (Views: 20.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 11:09:37 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (4.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 59ms (Views: 44.7ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 11:09:43 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (6.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 29ms (Views: 21.7ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 11:10:21 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 11:10:24 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 11:10:35 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 11:13:55 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 122ms (Views: 109.1ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 11:18:44 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"God Hand", "rating"=>73, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/j72lnuyhsvl2fn9obabk.jpg", "status_id"=>"3", "game"=>{"gamename"=>"God Hand", "rating"=>73, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/j72lnuyhsvl2fn9obabk.jpg", "status_id"=>"3"}}
+  [1m[35m (24.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (29.1ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (37.8ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "rating", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["gamename", "God Hand"], ["rating", 73], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/j72lnuyhsvl2fn9obabk.jpg"], ["status_id", 3], ["created_at", "2017-06-17 15:18:45.192612"], ["updated_at", "2017-06-17 15:18:45.192612"]]
+  [1m[35m (17.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (6.4ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 545ms (Views: 7.2ms | ActiveRecord: 200.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 11:18:55 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.9ms)
+
+
