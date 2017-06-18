@@ -2626,3 +2626,787 @@ Processing by GamesController#index as */*
 Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/games/" for ::1 at 2017-06-17 17:11:04 -0400
+  [1m[35m (6.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 43ms (Views: 26.8ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 17:11:15 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 40ms (Views: 23.4ms | ActiveRecord: 15.7ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 17:11:27 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Carmageddon: Crashers", "summary"=>"Carmageddon: Crashers is the next step for the Carmageddon brand, bringing the unique blend and experience that is Carmageddon to the iOS and Android platforms. \n \nIt offers the players a similar motoring mayhem experience, but with gameplay designed to appeal to the burst-play mobile gamer. The game will be Free To Play – the model adopted by the majority of successful games on mobile platforms. \n \nWith excellent graphics and focused monetization, the game creates an experience that allows the player to satisfy the urges of their inner ‘Max Damage’ and release everyday stresses by having high speed head-on crashes in crazy customised racing cars. \n \nCarmageddon: Crashers should be available on iOS and Android mid-2017.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/fsqgbn4mygl0psdsckrn.jpg", "status_id"=>"4", "game"=>{"gamename"=>"Carmageddon: Crashers", "summary"=>"Carmageddon: Crashers is the next step for the Carmageddon brand, bringing the unique blend and experience that is Carmageddon to the iOS and Android platforms. \n \nIt offers the players a similar motoring mayhem experience, but with gameplay designed to appeal to the burst-play mobile gamer. The game will be Free To Play – the model adopted by the majority of successful games on mobile platforms. \n \nWith excellent graphics and focused monetization, the game creates an experience that allows the player to satisfy the urges of their inner ‘Max Damage’ and release everyday stresses by having high speed head-on crashes in crazy customised racing cars. \n \nCarmageddon: Crashers should be available on iOS and Android mid-2017.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/fsqgbn4mygl0psdsckrn.jpg", "status_id"=>"4"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.5ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["gamename", "Carmageddon: Crashers"], ["summary", "Carmageddon: Crashers is the next step for the Carmageddon brand, bringing the unique blend and experience that is Carmageddon to the iOS and Android platforms. \n \nIt offers the players a similar motoring mayhem experience, but with gameplay designed to appeal to the burst-play mobile gamer. The game will be Free To Play – the model adopted by the majority of successful games on mobile platforms. \n \nWith excellent graphics and focused monetization, the game creates an experience that allows the player to satisfy the urges of their inner ‘Max Damage’ and release everyday stresses by having high speed head-on crashes in crazy customised racing cars. \n \nCarmageddon: Crashers should be available on iOS and Android mid-2017."], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/fsqgbn4mygl0psdsckrn.jpg"], ["status_id", 4], ["created_at", "2017-06-17 21:11:27.696396"], ["updated_at", "2017-06-17 21:11:27.696396"]]
+  [1m[35m (12.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 85ms (Views: 6.0ms | ActiveRecord: 35.9ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 17:11:36 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Earth Defense Force: Insect Armageddon", "summary"=>"Thousands of giant insects and aliens once again ravage the earth, and only the Earth Defense Force can stop them. Defend the city of New Detroit against an infestation bigger and meaner than ever before. Destroy these monsters at all costs, even if it means turning entire city blocks into rubble! \n \nEnjoy raw arcade shooter satisfaction on a gigantic modern scale. Collect over 300 weapons: assault rifles, rocket launchers, energy weapons, sniper rifles, grenade launchers and more! Play with 4 upgradeable armor types: Jetpack, Battle, Tactical, and Trooper. Experience Massive replayability through arcade style scoring, tons of weapons to collect, and multiple difficulty levels in every game mode! \n \nIn addition, the game also features a six player Survival mode that pits a human squad against a nonstop onslaught of the largest enemies the aliens have to offer. New Detroit’s giant bug problem is unavoidable, and mankind’s last hope lies with the Earth Defense Force. Defend the world from the insect invasion, even if it means blowing up the entire city as part of the extermination process. \n \nEarth Defense Force: Insect Armageddon and the soldiers are equipped better than ever in the latest cult classic iteration that follows in the footsteps of Earth Defense Force 2017 (Japanese Title “Earth Defense Force 3” developed by Sandlot), and Earth Defense Force: Insect Armageddon continues the rich history and hardcore fun of the series.", "rating"=>70, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/xovchnswhvfxcm7ebdk4.jpg", "status_id"=>"2", "game"=>{"gamename"=>"Earth Defense Force: Insect Armageddon", "summary"=>"Thousands of giant insects and aliens once again ravage the earth, and only the Earth Defense Force can stop them. Defend the city of New Detroit against an infestation bigger and meaner than ever before. Destroy these monsters at all costs, even if it means turning entire city blocks into rubble! \n \nEnjoy raw arcade shooter satisfaction on a gigantic modern scale. Collect over 300 weapons: assault rifles, rocket launchers, energy weapons, sniper rifles, grenade launchers and more! Play with 4 upgradeable armor types: Jetpack, Battle, Tactical, and Trooper. Experience Massive replayability through arcade style scoring, tons of weapons to collect, and multiple difficulty levels in every game mode! \n \nIn addition, the game also features a six player Survival mode that pits a human squad against a nonstop onslaught of the largest enemies the aliens have to offer. New Detroit’s giant bug problem is unavoidable, and mankind’s last hope lies with the Earth Defense Force. Defend the world from the insect invasion, even if it means blowing up the entire city as part of the extermination process. \n \nEarth Defense Force: Insect Armageddon and the soldiers are equipped better than ever in the latest cult classic iteration that follows in the footsteps of Earth Defense Force 2017 (Japanese Title “Earth Defense Force 3” developed by Sandlot), and Earth Defense Force: Insect Armageddon continues the rich history and hardcore fun of the series.", "rating"=>70, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/xovchnswhvfxcm7ebdk4.jpg", "status_id"=>"2"}}
+  [1m[35m (3.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (1.1ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (7.3ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "rating", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["gamename", "Earth Defense Force: Insect Armageddon"], ["summary", "Thousands of giant insects and aliens once again ravage the earth, and only the Earth Defense Force can stop them. Defend the city of New Detroit against an infestation bigger and meaner than ever before. Destroy these monsters at all costs, even if it means turning entire city blocks into rubble! \n \nEnjoy raw arcade shooter satisfaction on a gigantic modern scale. Collect over 300 weapons: assault rifles, rocket launchers, energy weapons, sniper rifles, grenade launchers and more! Play with 4 upgradeable armor types: Jetpack, Battle, Tactical, and Trooper. Experience Massive replayability through arcade style scoring, tons of weapons to collect, and multiple difficulty levels in every game mode! \n \nIn addition, the game also features a six player Survival mode that pits a human squad against a nonstop onslaught of the largest enemies the aliens have to offer. New Detroit’s giant bug problem is unavoidable, and mankind’s last hope lies with the Earth Defense Force. Defend the world from the insect invasion, even if it means blowing up the entire city as part of the extermination process. \n \nEarth Defense Force: Insect Armageddon and the soldiers are equipped better than ever in the latest cult classic iteration that follows in the footsteps of Earth Defense Force 2017 (Japanese Title “Earth Defense Force 3” developed by Sandlot), and Earth Defense Force: Insect Armageddon continues the rich history and hardcore fun of the series."], ["rating", 70], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/xovchnswhvfxcm7ebdk4.jpg"], ["status_id", 2], ["created_at", "2017-06-17 21:11:36.208372"], ["updated_at", "2017-06-17 21:11:36.208372"]]
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 38ms (Views: 5.7ms | ActiveRecord: 20.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 17:11:43 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/games/24" for 127.0.0.1 at 2017-06-17 17:11:53 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"24"}
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 24]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 11ms (Views: 3.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 17:11:53 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/games/25" for 127.0.0.1 at 2017-06-17 17:11:56 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"25"}
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 25]]
+  [1m[35m (8.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 19ms (Views: 4.4ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 17:11:56 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 17:16:48 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 48ms (Views: 34.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 20:49:29 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (4.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 82ms (Views: 71.0ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 21:06:19 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (12.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 128ms (Views: 102.2ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 21:06:45 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 139ms (Views: 123.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 21:09:23 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (3.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 77ms (Views: 59.7ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 21:09:28 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 21:13:19 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (38.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 184ms (Views: 132.8ms | ActiveRecord: 38.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 21:13:58 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (13.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 66ms (Views: 43.1ms | ActiveRecord: 13.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 21:30:49 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (7.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 110ms (Views: 95.8ms | ActiveRecord: 7.2ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 21:31:17 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Hercules: The Legendary Journeys", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/agtf5qe67meqiyzqdrb1.jpg", "status_id"=>"3", "game"=>{"gamename"=>"Hercules: The Legendary Journeys", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/agtf5qe67meqiyzqdrb1.jpg", "status_id"=>"3"}}
+  [1m[35m (7.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (18.8ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (14.2ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["gamename", "Hercules: The Legendary Journeys"], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/agtf5qe67meqiyzqdrb1.jpg"], ["status_id", 3], ["created_at", "2017-06-18 01:31:17.741728"], ["updated_at", "2017-06-18 01:31:17.741728"]]
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 136ms (Views: 10.7ms | ActiveRecord: 47.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 21:31:23 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (6.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 16ms (Views: 8.3ms | ActiveRecord: 6.5ms)
+
+
+Started DELETE "/games/26" for 127.0.0.1 at 2017-06-17 21:31:29 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"26"}
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 26]]
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 22ms (Views: 7.4ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 21:31:29 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 21:32:21 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (8.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 67ms (Views: 43.8ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 21:37:02 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 167ms (Views: 155.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 21:37:09 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 21:54:21 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (38.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 395ms (Views: 350.0ms | ActiveRecord: 38.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 22:02:07 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (20.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 103ms (Views: 73.8ms | ActiveRecord: 20.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 22:42:11 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (52.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 201ms (Views: 98.3ms | ActiveRecord: 52.5ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 22:42:46 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Star Citizen", "summary"=>"Star Citizen is an upcoming space trading and combat simulator video game for Microsoft Windows. Star Citizen will consist of two main components: first person space combat and trading in a massively multiplayer persistent universe and customizable private servers (known as Star Citizen), and a branching single-player and drop-in co-operative multiplayer campaign (known as Squadron 42). The game will feature Oculus Rift support.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/q7zgwvwtthyvig9oiwpo.jpg", "status_id"=>"", "game"=>{"gamename"=>"Star Citizen", "summary"=>"Star Citizen is an upcoming space trading and combat simulator video game for Microsoft Windows. Star Citizen will consist of two main components: first person space combat and trading in a massively multiplayer persistent universe and customizable private servers (known as Star Citizen), and a branching single-player and drop-in co-operative multiplayer campaign (known as Squadron 42). The game will feature Oculus Rift support.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/q7zgwvwtthyvig9oiwpo.jpg", "status_id"=>""}}
+  [1m[35m (35.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (18.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mGame Load (46.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 424ms (Views: 29.6ms | ActiveRecord: 100.5ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 22:42:47 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Star Citizen", "summary"=>"Star Citizen is an upcoming space trading and combat simulator video game for Microsoft Windows. Star Citizen will consist of two main components: first person space combat and trading in a massively multiplayer persistent universe and customizable private servers (known as Star Citizen), and a branching single-player and drop-in co-operative multiplayer campaign (known as Squadron 42). The game will feature Oculus Rift support.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/q7zgwvwtthyvig9oiwpo.jpg", "status_id"=>"", "game"=>{"gamename"=>"Star Citizen", "summary"=>"Star Citizen is an upcoming space trading and combat simulator video game for Microsoft Windows. Star Citizen will consist of two main components: first person space combat and trading in a massively multiplayer persistent universe and customizable private servers (known as Star Citizen), and a branching single-player and drop-in co-operative multiplayer campaign (known as Squadron 42). The game will feature Oculus Rift support.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/q7zgwvwtthyvig9oiwpo.jpg", "status_id"=>""}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mGame Load (31.0ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 70ms (Views: 32.5ms | ActiveRecord: 31.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 22:42:51 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (3.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 20ms (Views: 16.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 22:42:57 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (7.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 30ms (Views: 17.5ms | ActiveRecord: 7.5ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 22:43:01 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Star Citizen", "summary"=>"Star Citizen is an upcoming space trading and combat simulator video game for Microsoft Windows. Star Citizen will consist of two main components: first person space combat and trading in a massively multiplayer persistent universe and customizable private servers (known as Star Citizen), and a branching single-player and drop-in co-operative multiplayer campaign (known as Squadron 42). The game will feature Oculus Rift support.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/q7zgwvwtthyvig9oiwpo.jpg", "status_id"=>"", "game"=>{"gamename"=>"Star Citizen", "summary"=>"Star Citizen is an upcoming space trading and combat simulator video game for Microsoft Windows. Star Citizen will consist of two main components: first person space combat and trading in a massively multiplayer persistent universe and customizable private servers (known as Star Citizen), and a branching single-player and drop-in co-operative multiplayer campaign (known as Squadron 42). The game will feature Oculus Rift support.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/q7zgwvwtthyvig9oiwpo.jpg", "status_id"=>""}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 37ms (Views: 26.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 22:43:05 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 22:43:19 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (6.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 26ms (Views: 18.7ms | ActiveRecord: 6.6ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 22:43:37 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Halo Wars 2", "summary"=>"After decades adrift and declared “lost with all hands,” the brave crew of the UNSC Spirit of Fire are mysteriously awoken above an ancient Forerunner haven known as the Ark. In Halo Wars 2, Captain Cutter and his crew will face one of humanity’s most formidable threats yet: The Banished – a fierce and powerful Brute faction led by a cunning and lethal warrior known as Atriox.    \n   \nHalo Wars 2 delivers real-time strategy at the speed of Halo combat. Get ready to lead armies of Spartans and other Halo fighting forces like Warthogs, Scorpions and exciting new units in a brutal war against a terrifying new enemy on the biggest Halo battlefield yet.", "rating"=>76.7777777777778, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/opce2jt7ecqdaxbzelnp.jpg", "status_id"=>"2", "game"=>{"gamename"=>"Halo Wars 2", "summary"=>"After decades adrift and declared “lost with all hands,” the brave crew of the UNSC Spirit of Fire are mysteriously awoken above an ancient Forerunner haven known as the Ark. In Halo Wars 2, Captain Cutter and his crew will face one of humanity’s most formidable threats yet: The Banished – a fierce and powerful Brute faction led by a cunning and lethal warrior known as Atriox.    \n   \nHalo Wars 2 delivers real-time strategy at the speed of Halo combat. Get ready to lead armies of Spartans and other Halo fighting forces like Warthogs, Scorpions and exciting new units in a brutal war against a terrifying new enemy on the biggest Halo battlefield yet.", "rating"=>76.7777777777778, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/opce2jt7ecqdaxbzelnp.jpg", "status_id"=>"2"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (36.6ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (177.4ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "rating", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["gamename", "Halo Wars 2"], ["summary", "After decades adrift and declared “lost with all hands,” the brave crew of the UNSC Spirit of Fire are mysteriously awoken above an ancient Forerunner haven known as the Ark. In Halo Wars 2, Captain Cutter and his crew will face one of humanity’s most formidable threats yet: The Banished – a fierce and powerful Brute faction led by a cunning and lethal warrior known as Atriox.    \n   \nHalo Wars 2 delivers real-time strategy at the speed of Halo combat. Get ready to lead armies of Spartans and other Halo fighting forces like Warthogs, Scorpions and exciting new units in a brutal war against a terrifying new enemy on the biggest Halo battlefield yet."], ["rating", 76], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/opce2jt7ecqdaxbzelnp.jpg"], ["status_id", 2], ["created_at", "2017-06-18 02:43:37.544729"], ["updated_at", "2017-06-18 02:43:37.544729"]]
+  [1m[35m (9.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (8.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 327ms (Views: 15.4ms | ActiveRecord: 231.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 22:43:42 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 22:44:26 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (7.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 57ms (Views: 44.3ms | ActiveRecord: 7.4ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 22:44:32 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"The Sims 4: Vampires", "summary"=>"Transform your Sims into powerful vampires and live for eternity in an eerie new destination with The Sims 4 Vampires. Create a variety of vampires using all-new tools and unlock unique Powers that give your Sims supernatural abilities. Escape to Forgotten Hollow, build a lair and hang out with other immortals.", "rating"=>80, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/mxcvjjt2li8iggjcpl0m.jpg", "status_id"=>"", "game"=>{"gamename"=>"The Sims 4: Vampires", "summary"=>"Transform your Sims into powerful vampires and live for eternity in an eerie new destination with The Sims 4 Vampires. Create a variety of vampires using all-new tools and unlock unique Powers that give your Sims supernatural abilities. Escape to Forgotten Hollow, build a lair and hang out with other immortals.", "rating"=>80, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/mxcvjjt2li8iggjcpl0m.jpg", "status_id"=>""}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mGame Load (26.7ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 60ms (Views: 19.6ms | ActiveRecord: 27.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 22:44:45 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 22:46:14 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"The Sims 4: Vampires", "summary"=>"Transform your Sims into powerful vampires and live for eternity in an eerie new destination with The Sims 4 Vampires. Create a variety of vampires using all-new tools and unlock unique Powers that give your Sims supernatural abilities. Escape to Forgotten Hollow, build a lair and hang out with other immortals.", "rating"=>80, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/mxcvjjt2li8iggjcpl0m.jpg", "status_id"=>"4", "game"=>{"gamename"=>"The Sims 4: Vampires", "summary"=>"Transform your Sims into powerful vampires and live for eternity in an eerie new destination with The Sims 4 Vampires. Create a variety of vampires using all-new tools and unlock unique Powers that give your Sims supernatural abilities. Escape to Forgotten Hollow, build a lair and hang out with other immortals.", "rating"=>80, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/mxcvjjt2li8iggjcpl0m.jpg", "status_id"=>"4"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (7.0ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (19.6ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "rating", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["gamename", "The Sims 4: Vampires"], ["summary", "Transform your Sims into powerful vampires and live for eternity in an eerie new destination with The Sims 4 Vampires. Create a variety of vampires using all-new tools and unlock unique Powers that give your Sims supernatural abilities. Escape to Forgotten Hollow, build a lair and hang out with other immortals."], ["rating", 80], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/mxcvjjt2li8iggjcpl0m.jpg"], ["status_id", 4], ["created_at", "2017-06-18 02:46:14.250155"], ["updated_at", "2017-06-18 02:46:14.250155"]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (12.9ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 96ms (Views: 12.1ms | ActiveRecord: 45.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 22:46:20 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/games/28" for 127.0.0.1 at 2017-06-17 22:46:36 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"28"}
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (26.4ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 28]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (6.3ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 54ms (Views: 11.9ms | ActiveRecord: 33.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 22:46:36 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 22:57:37 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (203.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 473ms (Views: 184.2ms | ActiveRecord: 203.0ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 22:58:01 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Final Fantasy XV", "summary"=>"Final Fantasy XV is an upcoming action role-playing video game being developed and published by Square Enix for the PlayStation 4 and Xbox One. It is the fifteenth main installment in the Final Fantasy series, and forms part of the Fabula Nova Crystallis subseries, which also includes Final Fantasy XIII and Final Fantasy Type-0.  \n \n \n \nOriginally a spin-off titled Final Fantasy Versus XIII exclusive to the PlayStation 3, it is a heavy departure from previous games, providing a darker atmosphere that focuses on more realistic human characters than previous entries. The game features an open-world environment and action-based battle system similar to the Kingdom Hearts series and Type-0, incorporating the ability to switch weapons and other elements such as vehicle travel and camping.", "rating"=>82.375, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/exzxitwgvhwzric1byej.jpg", "status_id"=>"2", "game"=>{"gamename"=>"Final Fantasy XV", "summary"=>"Final Fantasy XV is an upcoming action role-playing video game being developed and published by Square Enix for the PlayStation 4 and Xbox One. It is the fifteenth main installment in the Final Fantasy series, and forms part of the Fabula Nova Crystallis subseries, which also includes Final Fantasy XIII and Final Fantasy Type-0.  \n \n \n \nOriginally a spin-off titled Final Fantasy Versus XIII exclusive to the PlayStation 3, it is a heavy departure from previous games, providing a darker atmosphere that focuses on more realistic human characters than previous entries. The game features an open-world environment and action-based battle system similar to the Kingdom Hearts series and Type-0, incorporating the ability to switch weapons and other elements such as vehicle travel and camping.", "rating"=>82.375, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/exzxitwgvhwzric1byej.jpg", "status_id"=>"2"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (1.5ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (23.5ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "rating", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["gamename", "Final Fantasy XV"], ["summary", "Final Fantasy XV is an upcoming action role-playing video game being developed and published by Square Enix for the PlayStation 4 and Xbox One. It is the fifteenth main installment in the Final Fantasy series, and forms part of the Fabula Nova Crystallis subseries, which also includes Final Fantasy XIII and Final Fantasy Type-0.  \n \n \n \nOriginally a spin-off titled Final Fantasy Versus XIII exclusive to the PlayStation 3, it is a heavy departure from previous games, providing a darker atmosphere that focuses on more realistic human characters than previous entries. The game features an open-world environment and action-based battle system similar to the Kingdom Hearts series and Type-0, incorporating the ability to switch weapons and other elements such as vehicle travel and camping."], ["rating", 82], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/exzxitwgvhwzric1byej.jpg"], ["status_id", 2], ["created_at", "2017-06-18 02:58:01.803239"], ["updated_at", "2017-06-18 02:58:01.803239"]]
+  [1m[35m (11.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (7.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 101ms (Views: 37.4ms | ActiveRecord: 43.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 22:58:08 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 22:58:43 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (5.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 48ms (Views: 42.3ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 23:13:21 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 56ms (Views: 19.0ms | ActiveRecord: 26.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 23:15:19 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 282ms (Views: 243.3ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 23:16:17 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 23:16:21 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 23:22:58 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 86ms (Views: 78.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 23:26:45 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (54.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 122ms (Views: 53.1ms | ActiveRecord: 54.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 23:27:50 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (14.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 172ms (Views: 136.9ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 23:31:19 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 59ms (Views: 52.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 23:34:37 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (4.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 80ms (Views: 55.2ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 23:45:44 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (8.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 171ms (Views: 141.4ms | ActiveRecord: 8.1ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-17 23:46:02 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Naruto Shippuden: Ultimate Ninja Storm 3 Full Burst", "summary"=>"Naruto Shippuden: Ultimate Ninja Storm 3: Full Burst is the re-release of Naruto Shippuden: Ultimate Ninja Storm 3, which includes revamped visuals, all costumes previously available as, DLC minus the Naruto (Goku) and Sakura (Hello Kitty), a new character (Kabuto Yakushi sage mode), a new story chapter and a new Challenge Mode, which consists of 100 missions. Each mission has varying objectives that unlock various in-game items and HD illustrations. Also newly added is Decision Mode, which allows the player to choose one's fate; the player is given two options of fates to choose from. The player can choose from either Legend (hard) or Hero (easy).\n\nOriginally released in March 2013 on consoles to wide critical and fan acclaim, the most epic NARUTO game ever released has been given a thorough overhaul for its PC debut! Not least among the wealth of enhancements contained in NARUTO SHIPPUDEN Ultimate Ninja STORM 3 FULL BURST is the addition of the feverishly anticipated chapter in which Sasuke and Itachi take on Kabuto in a nail-biting confrontation.", "rating"=>78.5, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/g8saec9ap2en12snnluu.jpg", "status_id"=>"3", "game"=>{"gamename"=>"Naruto Shippuden: Ultimate Ninja Storm 3 Full Burst", "summary"=>"Naruto Shippuden: Ultimate Ninja Storm 3: Full Burst is the re-release of Naruto Shippuden: Ultimate Ninja Storm 3, which includes revamped visuals, all costumes previously available as, DLC minus the Naruto (Goku) and Sakura (Hello Kitty), a new character (Kabuto Yakushi sage mode), a new story chapter and a new Challenge Mode, which consists of 100 missions. Each mission has varying objectives that unlock various in-game items and HD illustrations. Also newly added is Decision Mode, which allows the player to choose one's fate; the player is given two options of fates to choose from. The player can choose from either Legend (hard) or Hero (easy).\n\nOriginally released in March 2013 on consoles to wide critical and fan acclaim, the most epic NARUTO game ever released has been given a thorough overhaul for its PC debut! Not least among the wealth of enhancements contained in NARUTO SHIPPUDEN Ultimate Ninja STORM 3 FULL BURST is the addition of the feverishly anticipated chapter in which Sasuke and Itachi take on Kabuto in a nail-biting confrontation.", "rating"=>78.5, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/g8saec9ap2en12snnluu.jpg", "status_id"=>"3"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (8.1ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (60.6ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "rating", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["gamename", "Naruto Shippuden: Ultimate Ninja Storm 3 Full Burst"], ["summary", "Naruto Shippuden: Ultimate Ninja Storm 3: Full Burst is the re-release of Naruto Shippuden: Ultimate Ninja Storm 3, which includes revamped visuals, all costumes previously available as, DLC minus the Naruto (Goku) and Sakura (Hello Kitty), a new character (Kabuto Yakushi sage mode), a new story chapter and a new Challenge Mode, which consists of 100 missions. Each mission has varying objectives that unlock various in-game items and HD illustrations. Also newly added is Decision Mode, which allows the player to choose one's fate; the player is given two options of fates to choose from. The player can choose from either Legend (hard) or Hero (easy).\n\nOriginally released in March 2013 on consoles to wide critical and fan acclaim, the most epic NARUTO game ever released has been given a thorough overhaul for its PC debut! Not least among the wealth of enhancements contained in NARUTO SHIPPUDEN Ultimate Ninja STORM 3 FULL BURST is the addition of the feverishly anticipated chapter in which Sasuke and Itachi take on Kabuto in a nail-biting confrontation."], ["rating", 78], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/g8saec9ap2en12snnluu.jpg"], ["status_id", 3], ["created_at", "2017-06-18 03:46:02.461161"], ["updated_at", "2017-06-18 03:46:02.461161"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (1.4ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 346ms (Views: 6.3ms | ActiveRecord: 116.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 23:46:07 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/games/30" for 127.0.0.1 at 2017-06-17 23:46:13 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"30"}
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (12.6ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 30]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (6.3ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 52ms (Views: 15.1ms | ActiveRecord: 25.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 23:46:13 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/games/27" for 127.0.0.1 at 2017-06-17 23:46:21 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"27"}
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 27]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 18ms (Views: 6.9ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 23:46:21 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-17 23:47:34 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (19.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 118ms (Views: 97.3ms | ActiveRecord: 19.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 00:06:16 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (8.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 92ms (Views: 78.9ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 00:11:00 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (7.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 175ms (Views: 161.5ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 00:12:39 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (16.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 144ms (Views: 115.7ms | ActiveRecord: 16.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 00:14:42 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (7.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 95ms (Views: 80.7ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 00:15:16 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 145ms (Views: 115.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 00:17:11 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 142ms (Views: 134.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 00:18:37 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (3.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 59ms (Views: 47.1ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 00:29:53 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 120ms (Views: 111.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 00:36:12 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 166ms (Views: 144.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 00:36:22 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (7.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 25ms (Views: 16.7ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 00:37:33 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (9.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 80ms (Views: 60.7ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 00:38:12 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 00:38:40 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (6.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 34ms (Views: 26.8ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 00:38:50 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (7.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 42ms (Views: 31.5ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/games/" for ::1 at 2017-06-18 00:39:34 -0400
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 22ms (Views: 17.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 00:40:25 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 169ms (Views: 161.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 00:40:29 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (7.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 65ms (Views: 57.6ms | ActiveRecord: 7.0ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-18 00:40:50 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"God of War", "summary"=>"\"It is a new beginning for Kratos.  Living as a man, outside the shadow of the gods, he seeks solitude in the unfamiliar lands of Norse mythology.  With new purpose and his son at his side, Kratos must fight for survival as powerful forces threaten to disrupt the new life he has created...\"", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/o7ysa2oowygcidhv6h5f.jpg", "status_id"=>"2", "game"=>{"gamename"=>"God of War", "summary"=>"\"It is a new beginning for Kratos.  Living as a man, outside the shadow of the gods, he seeks solitude in the unfamiliar lands of Norse mythology.  With new purpose and his son at his side, Kratos must fight for survival as powerful forces threaten to disrupt the new life he has created...\"", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/o7ysa2oowygcidhv6h5f.jpg", "status_id"=>"2"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (6.6ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (19.6ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["gamename", "God of War"], ["summary", "\"It is a new beginning for Kratos.  Living as a man, outside the shadow of the gods, he seeks solitude in the unfamiliar lands of Norse mythology.  With new purpose and his son at his side, Kratos must fight for survival as powerful forces threaten to disrupt the new life he has created...\""], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/o7ysa2oowygcidhv6h5f.jpg"], ["status_id", 2], ["created_at", "2017-06-18 04:40:50.468698"], ["updated_at", "2017-06-18 04:40:50.468698"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (6.1ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 120ms (Views: 10.8ms | ActiveRecord: 33.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 00:40:54 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/games/31" for 127.0.0.1 at 2017-06-18 00:41:03 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"31"}
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 31]]
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (6.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 109ms (Views: 79.2ms | ActiveRecord: 14.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 00:41:03 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 00:42:57 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (6.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 109ms (Views: 87.2ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 00:43:21 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 00:47:16 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (6.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 195ms (Views: 183.2ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 00:47:30 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 00:52:12 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (5.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 103ms (Views: 90.6ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 00:52:15 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 00:52:32 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 00:57:53 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (7.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 58ms (Views: 44.7ms | ActiveRecord: 7.4ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 00:59:16 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"", "id"=>"undefined", "game"=>{"status_id"=>""}}
+  [1m[36mGame Load (2.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 50ms (Views: 1.9ms | ActiveRecord: 2.3ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 00:59:41 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"", "id"=>"undefined", "game"=>{"status_id"=>""}}
+  [1m[36mGame Load (10.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 58ms (Views: 0.5ms | ActiveRecord: 27.7ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 01:08:48 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"", "id"=>"undefined", "game"=>{"status_id"=>""}}
+  [1m[36mGame Load (7.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 28ms (Views: 2.3ms | ActiveRecord: 7.5ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 01:14:35 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"", "id"=>"undefined", "game"=>{"status_id"=>""}}
+  [1m[36mGame Load (9.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 32ms (Views: 7.0ms | ActiveRecord: 9.6ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 01:14:44 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"", "id"=>"undefined", "game"=>{"status_id"=>""}}
+  [1m[36mGame Load (2.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 01:20:08 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 68ms (Views: 46.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 01:20:12 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (3.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 33ms (Views: 28.7ms | ActiveRecord: 3.9ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 01:20:16 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"", "id"=>"undefined", "game"=>{"status_id"=>""}}
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 01:20:23 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"", "id"=>"undefined", "game"=>{"status_id"=>""}}
+  [1m[36mGame Load (1.9ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.9ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 01:20:31 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"", "id"=>"undefined", "game"=>{"status_id"=>""}}
+  [1m[36mGame Load (11.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 24ms (Views: 7.5ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 01:21:28 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 73ms (Views: 65.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 01:21:33 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (6.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 43ms (Views: 30.2ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 01:24:17 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (3.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 105ms (Views: 93.0ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 01:25:19 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 155ms (Views: 135.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 01:27:42 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (64.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 178ms (Views: 107.8ms | ActiveRecord: 64.0ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 01:28:17 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"", "id"=>"undefined", "game"=>{"status_id"=>""}}
+  [1m[36mGame Load (7.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 22ms (Views: 1.4ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 01:29:35 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 241ms (Views: 231.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 01:44:26 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (24.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 129ms (Views: 78.5ms | ActiveRecord: 24.8ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 01:44:39 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"", "id"=>"undefined", "game"=>{"status_id"=>""}}
+  [1m[36mGame Load (1.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 11ms (Views: 2.3ms | ActiveRecord: 1.4ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 01:44:54 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"", "id"=>"undefined", "game"=>{"status_id"=>""}}
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+

@@ -29,7 +29,9 @@ class AddingGames extends Component {
           summary: this.props.gameDetailsData[0].summary,
           rating: this.props.gameDetailsData[0].aggregated_rating,
           imageurl: this.props.gameDetailsData[0].cover.url,
-          status_id: event.target.status.value,
+          status_id: this.state.gamestatus,
+          // status_id: event.target.status.value,
+          //line 32 and 33 are same?
         // }
       })    
     }).catch(err => console.log('boooohooooo ',err))
@@ -61,7 +63,7 @@ class AddingGames extends Component {
                   <input type="hidden" value={this.props.gameDetailsData[0].summary} name="summary" />
                   <input type="hidden" value={this.props.gameDetailsData[0].aggregated_rating} name="rating" />
                   <input type="hidden" value={this.props.gameDetailsData[0].cover.url} name="imageurl" />
-                  <select name="status" onChange={this.handleStatusChange}>
+                  <select name="status_id" onChange={this.handleStatusChange}>
                     <option disabled>Select Status</option>
                     <option value="1">Plan To Buy</option>
                     <option value="2">Playing</option>
