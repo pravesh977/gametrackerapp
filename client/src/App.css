@@ -9,6 +9,7 @@ body {
 }
 .searchform {
   text-align: center;
+  margin-top: 20px;
   /*margin: 0 auto;*/
 }
 .searchform input {
@@ -48,6 +49,9 @@ body {
 }
 .listdiv li{
   list-style-type: none;
+  text-align:center;
+  margin: 5px;
+  
 }
 .mycrudlist {
   width:45%;
@@ -67,4 +71,9 @@ body {
 }
 .myeachgame li {
   margin-top:10px;
+}
+.planningdiv, .playingdiv, .completeddiv, .droppeddiv {
+  width:45%;
+  text-align:center;
+  
 }

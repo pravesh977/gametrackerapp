@@ -2,6 +2,8 @@ require 'httparty'
 
 class GamesController < ApplicationController
 
+
+ 
   def root
     render plain: "API Document"
   end
@@ -19,8 +21,36 @@ class GamesController < ApplicationController
 
   def index
     @games = Game.all
+    # @games = Game.status(params[:status]) if params [:status].present?
     render json: {message: "okay", gamedata: @games}
   end
+
+
+  def planning
+    @games = Game.where(status_id: "1")
+    # @game = Game.first
+    render json: {message: "okay", gamedata: @games}
+  end
+
+  def playing
+    @games = Game.where(status_id: "2")
+    # @game = Game.first
+    render json: {message: "okay", gamedata: @games}
+  end
+
+  def completed
+    @games = Game.where(status_id: "3")
+    # @game = Game.first
+    render json: {message: "okay", gamedata: @games}
+  end
+
+  def dropped
+    @games = Game.where(status_id: "4")
+    # @game = Game.first
+    render json: {message: "okay", gamedata: @games}
+  end
+
+  
     
   def show
     begin
@@ -69,6 +99,8 @@ class GamesController < ApplicationController
     end
   end
   
+ 
+
   private
     def game_params
       params.require(:game).permit(:gamename, :summary, :rating, :imageurl, :status_id)

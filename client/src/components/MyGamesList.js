@@ -24,11 +24,11 @@ class MyGamesList extends Component {
           <div>
             <nav>
               <ul>
-                <li><Link to="/fullgameslist">See My List</Link></li>
-                <li><Link to="/planningtobuy">Planning To Buy</Link></li>
-                <li><Link to="/playing">Playing</Link></li>
-                <li><Link to="/completed">Completed</Link></li>
-                <li><Link to="/dropped">Dropped</Link></li>
+                <li><Link to="/fullgameslist" style={{ textDecoration: 'none' }}>See My List</Link></li>
+                <li><Link to="/planningtobuy" style={{ textDecoration: 'none' }}>Planning To Buy</Link></li>
+                <li><Link to="/playing" style={{ textDecoration: 'none' }}>Playing</Link></li>
+                <li><Link to="/completed" style={{ textDecoration: 'none' }}>Completed</Link></li>
+                <li><Link to="/dropped" style={{ textDecoration: 'none' }}>Dropped</Link></li>
               </ul>
             </nav>
             <div>

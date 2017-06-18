@@ -3410,3 +3410,1453 @@ Processing by GamesController#update as */*
 Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.5ms)
 
 
+  [1m[36mGame Load (3.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mGame Load (1.7ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGame Load (4.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" IN (NULL, NULL)[0m
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" IN (NULL, NULL)[0m
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" IN (NULL, NULL)[0m
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."id" IN (NULL, NULL)[0m
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 0]]
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."status_id" = $1 LIMIT $2[0m  [["status_id", 1], ["LIMIT", 11]]
+Started GET "/games" for 127.0.0.1 at 2017-06-18 02:46:42 -0400
+  [1m[35m (23.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#index as */*
+  [1m[36mGame Load (6.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 93ms (Views: 33.9ms | ActiveRecord: 49.1ms)
+
+
+Started GET "/games/" for ::1 at 2017-06-18 02:46:47 -0400
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (2.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 28ms (Views: 17.4ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/games/2" for ::1 at 2017-06-18 02:46:52 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 14ms (Views: 0.8ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/games/" for ::1 at 2017-06-18 02:46:56 -0400
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/games/specific" for ::1 at 2017-06-18 02:47:00 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"specific"}
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/games/specific" for ::1 at 2017-06-18 02:47:55 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"specific"}
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 30ms (Views: 0.6ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/games/specific" for ::1 at 2017-06-18 02:47:58 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"specific"}
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/games/specific" for ::1 at 2017-06-18 02:49:09 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"specific"}
+  [1m[36mGame Load (1.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 44ms (Views: 0.6ms | ActiveRecord: 18.1ms)
+
+
+Started GET "/games/specific" for ::1 at 2017-06-18 02:50:18 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"specific"}
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 17ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/games/specific" for ::1 at 2017-06-18 02:50:39 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"specific"}
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 12ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games/specific" for ::1 at 2017-06-18 02:50:56 -0400
+  [1m[35m (6.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"specific"}
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 31ms (Views: 0.4ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/games/specific" for ::1 at 2017-06-18 02:50:59 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"specific"}
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 28ms (Views: 0.2ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 02:51:04 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 28ms (Views: 25.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/games/specific" for ::1 at 2017-06-18 02:52:54 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"specific"}
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 21ms (Views: 0.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/games/1" for ::1 at 2017-06-18 02:53:32 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 23ms (Views: 1.6ms | ActiveRecord: 2.5ms)
+
+
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" ORDER BY "games"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/games/specific/2" for ::1 at 2017-06-18 02:58:03 -0400
+  [1m[35m (7.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/games/specific/2"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/games/specific" for ::1 at 2017-06-18 02:58:10 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"specific"}
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 86ms (Views: 0.6ms | ActiveRecord: 18.9ms)
+
+
+Started GET "/games/specific/2" for ::1 at 2017-06-18 02:58:47 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/games/specific/2"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/games/specific/" for ::1 at 2017-06-18 02:59:36 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"specific"}
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 40ms (Views: 0.6ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/games/specific/" for ::1 at 2017-06-18 03:01:39 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"specific"}
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 22ms (Views: 0.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/games/specific/" for ::1 at 2017-06-18 03:02:06 -0400
+  [1m[35m (12.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"specific"}
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 26ms (Views: 0.4ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/games/specific/" for ::1 at 2017-06-18 03:02:23 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"specific"}
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 49ms (Views: 0.2ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/specific/" for ::1 at 2017-06-18 03:03:11 -0400
+Processing by GamesController#specific as HTML
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/specific" for ::1 at 2017-06-18 03:04:43 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"specific"}
+  [1m[36mGame Load (2.1ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 45ms (Views: 0.3ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/games/specific" for ::1 at 2017-06-18 03:04:57 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"specific"}
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 13ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games/specific" for ::1 at 2017-06-18 03:05:54 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"specific"}
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 18ms (Views: 0.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/games/specific" for ::1 at 2017-06-18 03:06:16 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"specific"}
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 9ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/specific" for ::1 at 2017-06-18 03:06:21 -0400
+Processing by GamesController#specific as HTML
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/specific" for ::1 at 2017-06-18 03:06:34 -0400
+Processing by GamesController#specific as HTML
+  [1m[36mGame Load (1.8ms)[0m  [1m[34mSELECT  "games".* FROM "games" ORDER BY "games"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 25ms (Views: 0.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/specific" for ::1 at 2017-06-18 03:06:53 -0400
+Processing by GamesController#specific as HTML
+  [1m[36mGame Load (3.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" ORDER BY "games"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 29ms (Views: 1.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/specific" for ::1 at 2017-06-18 03:07:08 -0400
+Processing by GamesController#specific as HTML
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/specific" for ::1 at 2017-06-18 03:07:20 -0400
+Processing by GamesController#specific as HTML
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 24ms (Views: 15.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/specific" for ::1 at 2017-06-18 03:07:30 -0400
+Processing by GamesController#specific as HTML
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 31ms (Views: 17.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/specific" for ::1 at 2017-06-18 11:46:08 -0400
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#specific as HTML
+  [1m[36mGame Load (12.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 71ms (Views: 16.0ms | ActiveRecord: 42.6ms)
+
+
+Started GET "/specific" for 127.0.0.1 at 2017-06-18 11:46:15 -0400
+Processing by GamesController#specific as */*
+  [1m[36mGame Load (1.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 55ms (Views: 46.1ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/" for ::1 at 2017-06-18 11:53:20 -0400
+Processing by GamesController#root as HTML
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for ::1 at 2017-06-18 11:53:25 -0400
+Processing by GamesController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/student/GA/projects/unit04/finalproject/gametrackerapp/app/models/game.rb:3: syntax error, unexpected =>
+  scope :with_status, =>(status) { joins(:status).wher
+                        ^
+/Users/student/GA/projects/unit04/finalproject/gametrackerapp/app/models/game.rb:3: syntax error, unexpected '{', expecting keyword_end
+ope :with_status, =>(status) { joins(:status).where(statuses
+                              ^
+/Users/student/GA/projects/unit04/finalproject/gametrackerapp/app/models/game.rb:3: syntax error, unexpected '}', expecting keyword_end
+: status}) if status.preset? }
+                              ^):
+  
+app/models/game.rb:3: syntax error, unexpected =>
+app/models/game.rb:3: syntax error, unexpected '{', expecting keyword_end
+app/models/game.rb:3: syntax error, unexpected '}', expecting keyword_end
+app/controllers/games_controller.rb:24:in `index'
+Started GET "/games" for ::1 at 2017-06-18 11:54:33 -0400
+Processing by GamesController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/student/GA/projects/unit04/finalproject/gametrackerapp/app/models/game.rb:3: syntax error, unexpected =>
+  scope :with_status, =>(status) { joins(:status).wher
+                        ^
+/Users/student/GA/projects/unit04/finalproject/gametrackerapp/app/models/game.rb:3: syntax error, unexpected '{', expecting keyword_end
+ope :with_status, =>(status) { joins(:status).where(statuses
+                              ^
+/Users/student/GA/projects/unit04/finalproject/gametrackerapp/app/models/game.rb:3: syntax error, unexpected '}', expecting keyword_end
+ status}) if status.present? }
+                              ^):
+  
+app/models/game.rb:3: syntax error, unexpected =>
+app/models/game.rb:3: syntax error, unexpected '{', expecting keyword_end
+app/models/game.rb:3: syntax error, unexpected '}', expecting keyword_end
+app/controllers/games_controller.rb:24:in `index'
+Started GET "/games" for ::1 at 2017-06-18 12:00:09 -0400
+  [1m[35m (7.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/student/GA/projects/unit04/finalproject/gametrackerapp/app/models/game.rb:3: syntax error, unexpected =>
+  scope :with_status, =>(status) { joins(:status).wher
+                        ^
+/Users/student/GA/projects/unit04/finalproject/gametrackerapp/app/models/game.rb:3: syntax error, unexpected '{', expecting keyword_end
+ope :with_status, =>(status) { joins(:status).where(statuses
+                              ^
+/Users/student/GA/projects/unit04/finalproject/gametrackerapp/app/models/game.rb:3: syntax error, unexpected '}', expecting keyword_end
+ status}) if status.present? }
+                              ^):
+  
+app/models/game.rb:3: syntax error, unexpected =>
+app/models/game.rb:3: syntax error, unexpected '{', expecting keyword_end
+app/models/game.rb:3: syntax error, unexpected '}', expecting keyword_end
+app/controllers/games_controller.rb:24:in `index'
+Started GET "/specific" for 127.0.0.1 at 2017-06-18 12:00:17 -0400
+Processing by GamesController#specific as */*
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/student/GA/projects/unit04/finalproject/gametrackerapp/app/models/game.rb:3: syntax error, unexpected =>
+  scope :with_status, =>(status) { joins(:status).wher
+                        ^
+/Users/student/GA/projects/unit04/finalproject/gametrackerapp/app/models/game.rb:3: syntax error, unexpected '{', expecting keyword_end
+ope :with_status, =>(status) { joins(:status).where(statuses
+                              ^
+/Users/student/GA/projects/unit04/finalproject/gametrackerapp/app/models/game.rb:3: syntax error, unexpected '}', expecting keyword_end
+ status}) if status.present? }
+                              ^):
+  
+app/models/game.rb:3: syntax error, unexpected =>
+app/models/game.rb:3: syntax error, unexpected '{', expecting keyword_end
+app/models/game.rb:3: syntax error, unexpected '}', expecting keyword_end
+app/controllers/games_controller.rb:29:in `specific'
+Started GET "/games" for ::1 at 2017-06-18 12:06:29 -0400
+  [1m[35m (7.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#index as HTML
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `with_status' for #<Class:0x007fc2cb492a88>
+Did you mean?  with_options):
+  
+app/controllers/games_controller.rb:24:in `index'
+Started GET "/specific" for 127.0.0.1 at 2017-06-18 12:06:34 -0400
+Processing by GamesController#specific as */*
+  [1m[36mGame Load (2.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 60ms (Views: 41.3ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/games" for ::1 at 2017-06-18 12:07:09 -0400
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (3.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 49ms (Views: 27.7ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/specific" for ::1 at 2017-06-18 12:07:28 -0400
+Processing by GamesController#specific as HTML
+  [1m[36mGame Load (1.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/status" for ::1 at 2017-06-18 12:22:28 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/status"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/games" for ::1 at 2017-06-18 12:22:38 -0400
+Processing by GamesController#index as HTML
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/games_controller.rb:24:in `index'
+Started GET "/games" for ::1 at 2017-06-18 12:22:59 -0400
+Processing by GamesController#index as HTML
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/games_controller.rb:24:in `index'
+Started GET "/games/status" for ::1 at 2017-06-18 12:23:06 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"status"}
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 131ms (Views: 1.1ms | ActiveRecord: 85.6ms)
+
+
+Started GET "/specific" for 127.0.0.1 at 2017-06-18 12:28:58 -0400
+  [1m[35m (6.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/specific"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for ::1 at 2017-06-18 12:30:51 -0400
+  [1m[35m (6.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#root as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for ::1 at 2017-06-18 12:30:56 -0400
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (7.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 81ms (Views: 43.3ms | ActiveRecord: 23.5ms)
+
+
+Started GET "/games/2" for ::1 at 2017-06-18 12:31:00 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 18ms (Views: 5.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/specific" for ::1 at 2017-06-18 12:31:05 -0400
+Processing by GamesController#specific as HTML
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/specific" for ::1 at 2017-06-18 12:31:40 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/specific"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/games/specific" for ::1 at 2017-06-18 12:31:57 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"specific"}
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 36ms (Views: 0.4ms | ActiveRecord: 14.7ms)
+
+
+Started GET "/planning" for ::1 at 2017-06-18 12:34:28 -0400
+Processing by GamesController#planning as HTML
+  [1m[36mGame Load (1.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 43ms (Views: 25.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/planning" for ::1 at 2017-06-18 12:35:18 -0400
+Processing by GamesController#planning as HTML
+  [1m[36mGame Load (2.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 30ms (Views: 18.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/games" for ::1 at 2017-06-18 12:35:23 -0400
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/games/2" for ::1 at 2017-06-18 12:35:30 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 6ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/games/planning" for ::1 at 2017-06-18 12:35:44 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"planning"}
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/games/2" for ::1 at 2017-06-18 12:35:57 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 47ms (Views: 0.3ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/games/1" for ::1 at 2017-06-18 12:36:00 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/games/planning" for ::1 at 2017-06-18 12:36:03 -0400
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"planning"}
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-06-18 12:49:54 -0400
+  [1m[35m (8.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#root as HTML
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for ::1 at 2017-06-18 12:49:59 -0400
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (5.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 95ms (Views: 43.6ms | ActiveRecord: 28.2ms)
+
+
+Started GET "/playing" for ::1 at 2017-06-18 12:50:04 -0400
+Processing by GamesController#playing as HTML
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-06-18 12:52:08 -0400
+Processing by GamesController#root as HTML
+Completed 200 OK in 54ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/planning" for ::1 at 2017-06-18 12:52:13 -0400
+Processing by GamesController#planning as HTML
+  [1m[36mGame Load (1.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 26ms (Views: 17.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/dropped" for ::1 at 2017-06-18 12:52:16 -0400
+Processing by GamesController#dropped as HTML
+  [1m[36mGame Load (3.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 10ms (Views: 5.3ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-18 12:53:34 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Karateka (Remake)", "summary"=>"Whether you are a nostalgic Karateka fan or new to the game, Karateka will charm you with its classic love story set in feudal Japan. Fight to save the lovely Mariko from the evil warlord Akuma and reunite her with her True Love!", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/f5lgwb0wh8oponyahffj.jpg", "status_id"=>"4", "game"=>{"gamename"=>"Karateka (Remake)", "summary"=>"Whether you are a nostalgic Karateka fan or new to the game, Karateka will charm you with its classic love story set in feudal Japan. Fight to save the lovely Mariko from the evil warlord Akuma and reunite her with her True Love!", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/f5lgwb0wh8oponyahffj.jpg", "status_id"=>"4"}}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (25.6ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (19.4ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["gamename", "Karateka (Remake)"], ["summary", "Whether you are a nostalgic Karateka fan or new to the game, Karateka will charm you with its classic love story set in feudal Japan. Fight to save the lovely Mariko from the evil warlord Akuma and reunite her with her True Love!"], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/f5lgwb0wh8oponyahffj.jpg"], ["status_id", 4], ["created_at", "2017-06-18 16:53:34.943175"], ["updated_at", "2017-06-18 16:53:34.943175"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 215ms (Views: 6.2ms | ActiveRecord: 69.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 12:53:39 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 41ms (Views: 39.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dropped" for ::1 at 2017-06-18 12:53:58 -0400
+Processing by GamesController#dropped as HTML
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 12:55:46 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (3.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 60ms (Views: 46.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 13:06:45 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 52ms (Views: 44.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:06:49 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 11ms (Views: 7.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:07:42 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 13:07:46 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:07:47 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:08:47 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (3.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 7ms (Views: 3.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:09:48 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 35ms (Views: 26.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:12:24 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (1.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 145ms (Views: 109.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:13:04 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:13:12 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (2.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 72ms (Views: 56.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:13:23 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:14:16 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (6.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 122ms (Views: 60.8ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:17:59 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (3.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 50ms (Views: 35.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:18:54 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (7.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 31ms (Views: 22.5ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 13:19:00 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:19:01 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 13:19:03 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:19:04 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (7.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 13ms (Views: 4.6ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:20:20 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (19.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 113ms (Views: 81.6ms | ActiveRecord: 19.9ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:22:58 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (1.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 44ms (Views: 28.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:24:19 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (11.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 85ms (Views: 59.5ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:24:42 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 54ms (Views: 50.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:25:34 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (3.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 94ms (Views: 52.9ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:27:51 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (1.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 57ms (Views: 43.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 13:28:29 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (3.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 53ms (Views: 48.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:28:30 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 13:28:33 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:28:34 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:29:07 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (2.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 166ms (Views: 139.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:29:49 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 42ms (Views: 37.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 13:29:51 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 28ms (Views: 22.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:29:52 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 8ms (Views: 4.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 13:29:53 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 85ms (Views: 5.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:29:57 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 13:31:29 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (3.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 43ms (Views: 23.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 13:31:34 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:31:35 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 7ms (Views: 3.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 13:31:35 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 13:31:37 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 13:32:49 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (1.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 33ms (Views: 19.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/dropp" for 127.0.0.1 at 2017-06-18 13:32:51 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/dropp"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.1) lib/rack/cors.rb:81:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 13:33:08 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (7.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 14ms (Views: 6.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 13:33:12 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 11ms (Views: 5.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 13:33:13 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 14ms (Views: 11.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:33:14 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 13:33:15 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 13:36:30 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (23.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 81ms (Views: 43.8ms | ActiveRecord: 23.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 13:37:06 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 1.1ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 13:38:14 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"", "id"=>"undefined", "game"=>{"status_id"=>""}}
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 58ms (Views: 2.9ms | ActiveRecord: 13.9ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 13:38:20 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"", "id"=>"undefined", "game"=>{"status_id"=>""}}
+  [1m[36mGame Load (6.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:38:27 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:39:09 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (6.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 10ms (Views: 3.8ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:39:15 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:39:40 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:39:55 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (12.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 23ms (Views: 10.6ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:40:20 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:41:25 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 96ms (Views: 28.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 13:42:29 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 41ms (Views: 34.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:42:30 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (1.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 12ms (Views: 7.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 13:42:31 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 13:42:32 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 13:42:32 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 13:42:33 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 13:42:36 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:42:37 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (10.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 15ms (Views: 4.1ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 13:42:37 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:42:38 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:44:56 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (6.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 10ms (Views: 2.6ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 13:48:39 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (5.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 52ms (Views: 41.8ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:48:44 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 11ms (Views: 7.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 13:49:14 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:49:23 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 13:49:25 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 13:49:40 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (14.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 20ms (Views: 5.7ms | ActiveRecord: 14.1ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 13:49:50 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (6.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 13ms (Views: 6.6ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:49:51 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 13:49:52 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 13:49:53 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (6.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 10ms (Views: 3.4ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 13:49:53 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 13:55:14 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (7.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 50ms (Views: 30.6ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 13:56:59 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (3.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 36ms (Views: 23.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 13:57:14 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 13:57:22 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 13:57:32 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 13:57:40 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (7.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 16ms (Views: 6.8ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 13:57:41 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 13:57:42 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 13:57:43 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 13:57:43 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 6ms (Views: 3.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 17:23:32 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (45.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 264ms (Views: 197.6ms | ActiveRecord: 45.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 17:23:33 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (9.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 43ms (Views: 30.9ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 17:23:34 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 17:23:34 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (7.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 21ms (Views: 11.6ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 17:23:35 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 17:23:36 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 17:23:37 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (7.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 30ms (Views: 22.3ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 17:24:01 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (12.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 28ms (Views: 15.0ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 17:24:05 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 17:24:06 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 23ms (Views: 19.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 17:24:07 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (16.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 80ms (Views: 60.7ms | ActiveRecord: 16.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 17:24:07 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 1.5ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 17:24:14 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"", "id"=>"undefined", "game"=>{"status_id"=>""}}
+  [1m[36mGame Load (18.0ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 23ms (Views: 0.3ms | ActiveRecord: 18.0ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 17:24:20 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 17:24:21 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 17:24:22 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (6.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 11ms (Views: 4.4ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 17:24:23 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 17:24:25 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2017-06-18 17:25:00 -0400
+Processing by GamesController#root as HTML
+Completed 200 OK in 10ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-06-18 17:41:13 -0400
+Processing by GamesController#root as HTML
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-06-18 17:41:17 -0400
+Processing by GamesController#root as HTML
+Completed 200 OK in 21ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 17:41:37 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 46ms (Views: 39.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 17:41:56 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 17:41:57 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 17:41:58 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (1.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 17:41:58 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 17:41:59 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 17:42:00 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 17:42:01 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 17:42:02 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 17:42:03 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 17:42:08 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 17:42:11 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 17:42:17 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 17:42:18 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 17:42:27 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 17:42:27 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 17:42:28 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 17:42:29 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 17:42:30 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 17:42:31 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.4ms)
+
+
