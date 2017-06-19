@@ -42,7 +42,11 @@ class FullGamesList extends Component {
       body: JSON.stringify({
         status_id: event.target.status_id.value,
       })
-    }).catch(err => console.log(err));
+    }).then((response) => {
+        if (response.status === 200) {
+          this.fetchAllGames();
+        }
+      })
   }
 
   // handleDelete(id) {

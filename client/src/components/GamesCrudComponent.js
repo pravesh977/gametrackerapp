@@ -12,7 +12,7 @@ class GamesCrudComponent extends Component {
         <li>Summary: {this.props.summary}</li>
         <li>Rating: {this.props.rating}</li>  
         <li>Playing Status: {this.props.status_id}</li>
-        <li>game id : {this.props.id}</li>
+        {/*<li>game id : {this.props.id}</li>*/}
         <form onSubmit={event=>this.props.handleEditSubmit(event, this.props.id)}>
             <select name="status_id" >
               <option selected disabled>Edit Status</option>

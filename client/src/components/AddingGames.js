@@ -37,7 +37,6 @@ class AddingGames extends Component {
     }).catch(err => console.log('boooohooooo ',err))
     this.setState({gameAdded: true})   
   }
-
 //     handleGameSubmit(event) {
 //     event.preventDefault();
 //     console.log(this.state.gamestatus);
@@ -70,7 +69,7 @@ class AddingGames extends Component {
                     <option value="3">Completed</option>
                     <option value="4">Dropped</option>
                   </select>
-                  <input type="submit" value="save my status"/>
+                 <input type="submit" value="save my status"/>
               </form>          
 
           </div>

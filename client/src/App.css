@@ -6,6 +6,11 @@
 }*/
 body {
   box-sizing: border-box;
+  font-weight: bold;
+  background-image: url('http://6.darkroom.shortlist.com/980/9d8a9809f858fdf34e669e427438757a:62b682cb12c42c09c3269b0241b9b7d6/vader-david-prowse-ctc5869.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+
 }
 .searchform {
   text-align: center;
@@ -27,7 +32,7 @@ body {
 }
 
 .secondSearchForm input:hover {
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .formForPost {
@@ -51,6 +56,8 @@ body {
   list-style-type: none;
   text-align:center;
   margin: 5px;
+  font-family:Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  font-size: 30px;
   
 }
 .mycrudlist {
@@ -63,6 +70,7 @@ body {
 .searchedul {
   width:45%;
   float:right;
+  font-family:Cambria, Cochin, Georgia, Times, Times New Roman, serif;
 }
 .myeachgame {
   font-size: 24px;
@@ -75,5 +83,15 @@ body {
 .planningdiv, .playingdiv, .completeddiv, .droppeddiv {
   width:45%;
   text-align:center;
-  
+  font-family:Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  font-size: 24px;
+  border: 5px black solid;
+  background: #14E8B3;
+  opacity: 0.5;
+  float:left;
+}
+.formForPost {
+  border: solid black 5px;
+  background: pink;
+  opacity: 0.5;
 }
