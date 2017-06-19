@@ -4860,3 +4860,2353 @@ Processing by GamesController#index as */*
 Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 17:53:00 -0400
+Started GET "/games" for 127.0.0.1 at 2017-06-18 17:53:00 -0400
+  [1m[35m (12.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (13.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#dropped as */*
+Processing by GamesController#index as */*
+  [1m[36mGame Load (17.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+  [1m[36mGame Load (8.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 71ms (Views: 20.3ms | ActiveRecord: 39.7ms)
+
+
+Completed 200 OK in 79ms (Views: 12.7ms | ActiveRecord: 51.7ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 17:53:07 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"", "id"=>"undefined", "game"=>{"status_id"=>""}}
+  [1m[36mGame Load (3.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 48ms (Views: 0.5ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/" for ::1 at 2017-06-18 17:56:31 -0400
+Processing by GamesController#root as HTML
+Completed 200 OK in 10ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 17:56:40 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 24ms (Views: 19.9ms | ActiveRecord: 1.5ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 17:56:54 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"", "id"=>"undefined", "game"=>{"status_id"=>""}}
+  [1m[36mGame Load (1.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 17:57:43 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 26ms (Views: 22.9ms | ActiveRecord: 1.0ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 17:57:50 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"", "id"=>"undefined", "game"=>{"status_id"=>""}}
+  [1m[36mGame Load (3.7ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 17:59:43 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 55ms (Views: 43.9ms | ActiveRecord: 1.6ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 17:59:51 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"", "id"=>"undefined", "game"=>{"status_id"=>""}}
+  [1m[36mGame Load (6.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 18:05:09 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (5.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 111ms (Views: 98.9ms | ActiveRecord: 5.2ms)
+
+
+Started PUT "/games/1" for 127.0.0.1 at 2017-06-18 18:05:16 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"", "id"=>"1", "game"=>{"status_id"=>""}}
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mGame Load (3.1ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 191ms (Views: 5.9ms | ActiveRecord: 17.1ms)
+
+
+Started PUT "/games/1" for 127.0.0.1 at 2017-06-18 18:05:25 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"", "id"=>"1", "game"=>{"status_id"=>""}}
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mGame Load (1.3ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 10ms (Views: 3.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 18:05:32 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/games/1" for 127.0.0.1 at 2017-06-18 18:05:45 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"", "id"=>"1", "game"=>{"status_id"=>""}}
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mGame Load (17.7ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 31ms (Views: 6.6ms | ActiveRecord: 18.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 18:10:45 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (5.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 101ms (Views: 84.7ms | ActiveRecord: 5.7ms)
+
+
+Started PUT "/games/1" for 127.0.0.1 at 2017-06-18 18:10:53 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"2", "id"=>"1", "game"=>{"status_id"=>"2"}}
+  [1m[36mGame Load (7.1ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (24.2ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (1.4ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 194ms (Views: 5.6ms | ActiveRecord: 85.7ms)
+
+
+Started PUT "/games/1" for 127.0.0.1 at 2017-06-18 18:11:29 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"4", "id"=>"1", "game"=>{"status_id"=>"4"}}
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.7ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (39.9ms)[0m  [1m[33mUPDATE "games" SET "status_id" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["status_id", 4], ["updated_at", "2017-06-18 22:11:29.210661"], ["id", 1]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 65ms (Views: 5.1ms | ActiveRecord: 43.6ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 18:11:53 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 18:12:09 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 18:12:20 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 18:12:22 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 18:12:29 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 18:12:32 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/games/2" for 127.0.0.1 at 2017-06-18 18:12:41 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"4", "id"=>"2", "game"=>{"status_id"=>"4"}}
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (1.4ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (8.5ms)[0m  [1m[33mUPDATE "games" SET "status_id" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["status_id", 4], ["updated_at", "2017-06-18 22:12:41.446863"], ["id", 2]]
+  [1m[35m (11.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 46ms (Views: 5.0ms | ActiveRecord: 23.5ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 18:12:48 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 18:12:54 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 18:12:56 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 18:13:03 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 18:13:05 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 18:13:09 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 18:13:11 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 18:13:23 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/games/3" for 127.0.0.1 at 2017-06-18 18:13:32 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"", "id"=>"3", "game"=>{"status_id"=>""}}
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 13ms (Views: 5.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 18:13:35 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 18:13:36 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 18:13:37 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 18:13:39 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 18:13:42 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (1.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 18:13:47 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 18:13:48 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 18:14:00 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 18:14:07 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 18:14:11 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/games/3" for 127.0.0.1 at 2017-06-18 18:14:39 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"3", "id"=>"3", "game"=>{"status_id"=>"3"}}
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.4ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (12.3ms)[0m  [1m[33mUPDATE "games" SET "status_id" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["status_id", 3], ["updated_at", "2017-06-18 22:14:39.427330"], ["id", 3]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 36ms (Views: 5.9ms | ActiveRecord: 20.6ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 18:15:28 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 18:15:28 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 18:15:40 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 18:15:41 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 18:15:42 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 18:15:43 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 18:15:44 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 18:15:45 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 18:15:50 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 18:15:55 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/games/4" for 127.0.0.1 at 2017-06-18 18:16:06 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"1", "id"=>"4", "game"=>{"status_id"=>"1"}}
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.4ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 13ms (Views: 4.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 18:16:59 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (1.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 18:17:01 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 18:17:08 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 18:17:10 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2017-06-18 18:17:35 -0400
+Processing by GamesController#root as HTML
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for ::1 at 2017-06-18 18:17:39 -0400
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 18:18:33 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-18 18:18:51 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Mafia III", "summary"=>"It’s 1968 and the rules have changed. After years in Vietnam, Lincoln Clay knows this truth: Family isn’t who you’re born with, it’s who you die for.", "rating"=>67.8260869565217, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/vx4quwdblondr1o13xh5.jpg", "status_id"=>"2", "game"=>{"gamename"=>"Mafia III", "summary"=>"It’s 1968 and the rules have changed. After years in Vietnam, Lincoln Clay knows this truth: Family isn’t who you’re born with, it’s who you die for.", "rating"=>67.8260869565217, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/vx4quwdblondr1o13xh5.jpg", "status_id"=>"2"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.9ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (25.2ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "rating", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["gamename", "Mafia III"], ["summary", "It’s 1968 and the rules have changed. After years in Vietnam, Lincoln Clay knows this truth: Family isn’t who you’re born with, it’s who you die for."], ["rating", 67], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/vx4quwdblondr1o13xh5.jpg"], ["status_id", 2], ["created_at", "2017-06-18 22:18:51.150869"], ["updated_at", "2017-06-18 22:18:51.150869"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 63ms (Views: 5.4ms | ActiveRecord: 28.1ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 18:18:59 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/games" for ::1 at 2017-06-18 18:20:16 -0400
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 18:21:29 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 18:21:30 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 7ms (Views: 3.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 18:21:32 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-18 18:22:00 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Mafia III", "summary"=>"It’s 1968 and the rules have changed. After years in Vietnam, Lincoln Clay knows this truth: Family isn’t who you’re born with, it’s who you die for.", "rating"=>67.8260869565217, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/vx4quwdblondr1o13xh5.jpg", "status_id"=>"3", "game"=>{"gamename"=>"Mafia III", "summary"=>"It’s 1968 and the rules have changed. After years in Vietnam, Lincoln Clay knows this truth: Family isn’t who you’re born with, it’s who you die for.", "rating"=>67.8260869565217, "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/vx4quwdblondr1o13xh5.jpg", "status_id"=>"3"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.6ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (10.1ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "rating", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["gamename", "Mafia III"], ["summary", "It’s 1968 and the rules have changed. After years in Vietnam, Lincoln Clay knows this truth: Family isn’t who you’re born with, it’s who you die for."], ["rating", 67], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/vx4quwdblondr1o13xh5.jpg"], ["status_id", 3], ["created_at", "2017-06-18 22:22:00.221953"], ["updated_at", "2017-06-18 22:22:00.221953"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 33ms (Views: 6.8ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 18:22:40 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 18:22:41 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 18:23:04 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 18:23:13 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/games/34" for 127.0.0.1 at 2017-06-18 18:23:18 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"34"}
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (7.4ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 34]]
+  [1m[35m (17.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 46ms (Views: 6.4ms | ActiveRecord: 25.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 18:23:18 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/games/33" for 127.0.0.1 at 2017-06-18 18:23:19 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"33"}
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 33]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 20ms (Views: 5.7ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 18:23:19 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2017-06-18 18:23:52 -0400
+Processing by GamesController#create as */*
+  Parameters: {"gamename"=>"Blue Horizon", "summary"=>"A brand new open world first person game set in a tropical archipelago filled with islands, sailing ships and pirates!\nA brand new game, from a new Indie Studio, bringing you an action packed adventure on the high seas!\n\nThe year is 1686, and you must make your way through the Caribbean world on the Blue Horizon so find your fortune and seek revenge on the evil Pirate Captain Bloodbeard! A first person desktop game filled with adventure, discovery and combat.\n\nBlue Horizon has been created so the player is in a large open world environment. With each part of the game although separate can be explored without the player noticing.\n\nCaribbean World\nThere is only one level. Always viewable on the horizon. Initially consisting of 8 Islands, the player must discover each location in order to explore it. Locations can be discovered by talking to NPCs (Non-Playable characters), or following maps found. Once a location has been found it can be traveled to and from using a ship.\n\nTropical Islands with towns, villages, forts, dunes, mountains, cave systems, giant caverns, ship wrecks, and forests all lay in wait for the player to find and explore.\n\nInventory and Items\nWeapons, equipment, books, valuable loot are found laying around, in containers or purchased from shops and peddlers, looted from enemies, or given as rewards for completing tasks previously given. Keys are required for some doors too.\nWeapons are currently melee, pistols and cannon emplacements.\n\nEquipment or a pistol can also be equipped in the left hand such as the Lantern for seeing in dark caves. Provisions are needed to restore health, enhancement items can also be found or purchased.\n\nTasks\nTo progress, one must complete tasks given from NPCs or from instructions found. The NPCs will be grateful, whether they are for the main quest or side missions. Tasks may involve collecting, farming, building, hunting, slaying or completing another task. Hidden stashes, and Bounty hunting are available from NPCs.\n\nEnemies\nThere are dangerous islands, and relatively safe islands. Unique foes await, be they Pirates, animals or strange creatures, undead and non-human. Some enemies are weak, some are strong and have various short and long range attacks. Some individuals you encounter will be docile until provoked, in which case they may attack as a group.\n\nEnemy ships can plague the player too. Captain Bloodbeard's ship is the main aggressor. Bosses await to complete the main story line. The seas contain Marauding Pirate ships which you may encounter when sailing from Island to Island.\nThe game is still in development and is being expanded to give the player the most enjoyment and fun as possible, while making it not too easy or too hard.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/ffdchs2nx6hs0crl9n4l.jpg", "status_id"=>"3", "game"=>{"gamename"=>"Blue Horizon", "summary"=>"A brand new open world first person game set in a tropical archipelago filled with islands, sailing ships and pirates!\nA brand new game, from a new Indie Studio, bringing you an action packed adventure on the high seas!\n\nThe year is 1686, and you must make your way through the Caribbean world on the Blue Horizon so find your fortune and seek revenge on the evil Pirate Captain Bloodbeard! A first person desktop game filled with adventure, discovery and combat.\n\nBlue Horizon has been created so the player is in a large open world environment. With each part of the game although separate can be explored without the player noticing.\n\nCaribbean World\nThere is only one level. Always viewable on the horizon. Initially consisting of 8 Islands, the player must discover each location in order to explore it. Locations can be discovered by talking to NPCs (Non-Playable characters), or following maps found. Once a location has been found it can be traveled to and from using a ship.\n\nTropical Islands with towns, villages, forts, dunes, mountains, cave systems, giant caverns, ship wrecks, and forests all lay in wait for the player to find and explore.\n\nInventory and Items\nWeapons, equipment, books, valuable loot are found laying around, in containers or purchased from shops and peddlers, looted from enemies, or given as rewards for completing tasks previously given. Keys are required for some doors too.\nWeapons are currently melee, pistols and cannon emplacements.\n\nEquipment or a pistol can also be equipped in the left hand such as the Lantern for seeing in dark caves. Provisions are needed to restore health, enhancement items can also be found or purchased.\n\nTasks\nTo progress, one must complete tasks given from NPCs or from instructions found. The NPCs will be grateful, whether they are for the main quest or side missions. Tasks may involve collecting, farming, building, hunting, slaying or completing another task. Hidden stashes, and Bounty hunting are available from NPCs.\n\nEnemies\nThere are dangerous islands, and relatively safe islands. Unique foes await, be they Pirates, animals or strange creatures, undead and non-human. Some enemies are weak, some are strong and have various short and long range attacks. Some individuals you encounter will be docile until provoked, in which case they may attack as a group.\n\nEnemy ships can plague the player too. Captain Bloodbeard's ship is the main aggressor. Bosses await to complete the main story line. The seas contain Marauding Pirate ships which you may encounter when sailing from Island to Island.\nThe game is still in development and is being expanded to give the player the most enjoyment and fun as possible, while making it not too easy or too hard.", "imageurl"=>"//images.igdb.com/igdb/image/upload/t_thumb/ffdchs2nx6hs0crl9n4l.jpg", "status_id"=>"3"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.3ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (27.7ms)[0m  [1m[32mINSERT INTO "games" ("gamename", "summary", "imageurl", "status_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["gamename", "Blue Horizon"], ["summary", "A brand new open world first person game set in a tropical archipelago filled with islands, sailing ships and pirates!\nA brand new game, from a new Indie Studio, bringing you an action packed adventure on the high seas!\n\nThe year is 1686, and you must make your way through the Caribbean world on the Blue Horizon so find your fortune and seek revenge on the evil Pirate Captain Bloodbeard! A first person desktop game filled with adventure, discovery and combat.\n\nBlue Horizon has been created so the player is in a large open world environment. With each part of the game although separate can be explored without the player noticing.\n\nCaribbean World\nThere is only one level. Always viewable on the horizon. Initially consisting of 8 Islands, the player must discover each location in order to explore it. Locations can be discovered by talking to NPCs (Non-Playable characters), or following maps found. Once a location has been found it can be traveled to and from using a ship.\n\nTropical Islands with towns, villages, forts, dunes, mountains, cave systems, giant caverns, ship wrecks, and forests all lay in wait for the player to find and explore.\n\nInventory and Items\nWeapons, equipment, books, valuable loot are found laying around, in containers or purchased from shops and peddlers, looted from enemies, or given as rewards for completing tasks previously given. Keys are required for some doors too.\nWeapons are currently melee, pistols and cannon emplacements.\n\nEquipment or a pistol can also be equipped in the left hand such as the Lantern for seeing in dark caves. Provisions are needed to restore health, enhancement items can also be found or purchased.\n\nTasks\nTo progress, one must complete tasks given from NPCs or from instructions found. The NPCs will be grateful, whether they are for the main quest or side missions. Tasks may involve collecting, farming, building, hunting, slaying or completing another task. Hidden stashes, and Bounty hunting are available from NPCs.\n\nEnemies\nThere are dangerous islands, and relatively safe islands. Unique foes await, be they Pirates, animals or strange creatures, undead and non-human. Some enemies are weak, some are strong and have various short and long range attacks. Some individuals you encounter will be docile until provoked, in which case they may attack as a group.\n\nEnemy ships can plague the player too. Captain Bloodbeard's ship is the main aggressor. Bosses await to complete the main story line. The seas contain Marauding Pirate ships which you may encounter when sailing from Island to Island.\nThe game is still in development and is being expanded to give the player the most enjoyment and fun as possible, while making it not too easy or too hard."], ["imageurl", "//images.igdb.com/igdb/image/upload/t_thumb/ffdchs2nx6hs0crl9n4l.jpg"], ["status_id", 3], ["created_at", "2017-06-18 22:23:52.870030"], ["updated_at", "2017-06-18 22:23:52.870030"]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 49ms (Views: 6.6ms | ActiveRecord: 34.6ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 18:24:13 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 18:24:14 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 18:24:14 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/games" for ::1 at 2017-06-18 18:25:05 -0400
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (6.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 15ms (Views: 8.0ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 18:25:29 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.9ms)
+
+
+Started PUT "/games/4" for 127.0.0.1 at 2017-06-18 18:25:56 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"", "id"=>"4", "game"=>{"status_id"=>""}}
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 44ms (Views: 8.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/games" for ::1 at 2017-06-18 18:26:32 -0400
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 18:29:46 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (3.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 80ms (Views: 43.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 18:30:02 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (6.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 15ms (Views: 6.3ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 18:30:08 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (6.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 12ms (Views: 5.0ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 18:30:13 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/games/4" for 127.0.0.1 at 2017-06-18 18:30:22 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"1", "id"=>"4", "game"=>{"status_id"=>"1"}}
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.5ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 26ms (Views: 10.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 18:30:45 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 18:30:47 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 18:30:54 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 18:30:56 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (1.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 18:31:01 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 18:31:07 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (6.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 10ms (Views: 3.4ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 18:31:11 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 18:31:17 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (1.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 18:31:21 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/games/4" for 127.0.0.1 at 2017-06-18 18:31:28 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"3", "id"=>"4", "game"=>{"status_id"=>"3"}}
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.4ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (7.0ms)[0m  [1m[33mUPDATE "games" SET "status_id" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["status_id", 3], ["updated_at", "2017-06-18 22:31:28.726986"], ["id", 4]]
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (6.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 40ms (Views: 11.7ms | ActiveRecord: 20.3ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 18:32:22 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 18:32:24 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 18:32:43 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 1.0ms)
+
+
+Started PUT "/games/5" for 127.0.0.1 at 2017-06-18 18:32:56 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"1", "id"=>"5", "game"=>{"status_id"=>"1"}}
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.7ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (21.9ms)[0m  [1m[33mUPDATE "games" SET "status_id" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["status_id", 1], ["updated_at", "2017-06-18 22:32:56.357040"], ["id", 5]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (2.7ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 43ms (Views: 6.7ms | ActiveRecord: 26.7ms)
+
+
+Started GET "/games" for ::1 at 2017-06-18 18:33:29 -0400
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/games" for ::1 at 2017-06-18 19:51:25 -0400
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (39.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 185ms (Views: 134.3ms | ActiveRecord: 39.2ms)
+
+
+Started PUT "/games/5" for 127.0.0.1 at 2017-06-18 19:52:08 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"1", "id"=>"5", "game"=>{"status_id"=>"1"}}
+  [1m[36mGame Load (35.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (24.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (12.4ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (32.0ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 150ms (Views: 12.8ms | ActiveRecord: 104.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 19:52:33 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 1.1ms)
+
+
+Started PUT "/games/6" for 127.0.0.1 at 2017-06-18 19:52:49 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"1", "id"=>"6", "game"=>{"status_id"=>"1"}}
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (6.0ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (38.0ms)[0m  [1m[33mUPDATE "games" SET "status_id" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["status_id", 1], ["updated_at", "2017-06-18 23:52:49.547152"], ["id", 6]]
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (6.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 74ms (Views: 10.8ms | ActiveRecord: 52.8ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 19:53:15 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (23.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 27ms (Views: 2.9ms | ActiveRecord: 23.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 19:53:16 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 19:53:20 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 19:53:23 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (6.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 11ms (Views: 4.3ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 19:53:25 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (8.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 15ms (Views: 5.4ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 19:53:29 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 19:53:35 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.7ms)
+
+
+Started PUT "/games/7" for 127.0.0.1 at 2017-06-18 19:54:27 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"3", "id"=>"7", "game"=>{"status_id"=>"3"}}
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (7.5ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 39ms (Views: 5.6ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 19:55:03 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 19:55:06 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 19:55:08 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 19:55:10 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 19:55:19 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.9ms)
+
+
+Started PUT "/games/7" for 127.0.0.1 at 2017-06-18 19:55:29 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"2", "id"=>"7", "game"=>{"status_id"=>"2"}}
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.6ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (3.1ms)[0m  [1m[33mUPDATE "games" SET "status_id" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["status_id", 2], ["updated_at", "2017-06-18 23:55:29.919217"], ["id", 7]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 39ms (Views: 6.9ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 19:55:44 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (1.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 19:55:47 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 19:55:51 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 19:55:56 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 19:55:56 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 19:55:58 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 19:56:01 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 20:00:25 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (3.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 56ms (Views: 37.9ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:00:33 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (7.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 19ms (Views: 11.4ms | ActiveRecord: 7.5ms)
+
+
+Started PUT "/games/29" for 127.0.0.1 at 2017-06-18 20:00:41 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"2", "id"=>"29", "game"=>{"status_id"=>"2"}}
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.7ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (7.4ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 37ms (Views: 10.4ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 20:01:16 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 20:01:24 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (13.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 23ms (Views: 9.7ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:01:27 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/games/29" for 127.0.0.1 at 2017-06-18 20:01:45 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"3", "id"=>"29", "game"=>{"status_id"=>"3"}}
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (18.1ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (10.4ms)[0m  [1m[33mUPDATE "games" SET "status_id" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["status_id", 3], ["updated_at", "2017-06-19 00:01:45.677203"], ["id", 29]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (1.4ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 59ms (Views: 5.6ms | ActiveRecord: 31.0ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 20:02:09 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (6.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 15ms (Views: 8.0ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:02:14 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/games" for ::1 at 2017-06-18 20:02:21 -0400
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (4.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 42ms (Views: 25.9ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:02:53 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 16ms (Views: 11.3ms | ActiveRecord: 1.5ms)
+
+
+Started PUT "/games/32" for 127.0.0.1 at 2017-06-18 20:02:58 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"1", "id"=>"32", "game"=>{"status_id"=>"1"}}
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (6.1ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (11.5ms)[0m  [1m[33mUPDATE "games" SET "status_id" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["status_id", 1], ["updated_at", "2017-06-19 00:02:58.857772"], ["id", 32]]
+  [1m[35m (10.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 61ms (Views: 8.6ms | ActiveRecord: 30.3ms)
+
+
+Started PUT "/games/32" for 127.0.0.1 at 2017-06-18 20:03:06 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"2", "id"=>"32", "game"=>{"status_id"=>"2"}}
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (1.1ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (6.2ms)[0m  [1m[33mUPDATE "games" SET "status_id" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["status_id", 2], ["updated_at", "2017-06-19 00:03:06.786474"], ["id", 32]]
+  [1m[35m (8.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (13.3ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 52ms (Views: 11.7ms | ActiveRecord: 30.0ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 20:03:21 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:03:22 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (6.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 12ms (Views: 6.1ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 20:03:23 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (7.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 12ms (Views: 3.8ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:03:32 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.7ms)
+
+
+Started PUT "/games/1" for 127.0.0.1 at 2017-06-18 20:03:46 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"2", "id"=>"1", "game"=>{"status_id"=>"2"}}
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.4ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (6.4ms)[0m  [1m[33mUPDATE "games" SET "status_id" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["status_id", 2], ["updated_at", "2017-06-19 00:03:46.755415"], ["id", 1]]
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 30ms (Views: 8.5ms | ActiveRecord: 13.3ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 20:03:54 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (6.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 11ms (Views: 3.6ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:03:58 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/games/2" for 127.0.0.1 at 2017-06-18 20:04:05 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"1", "id"=>"2", "game"=>{"status_id"=>"1"}}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.4ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (11.2ms)[0m  [1m[33mUPDATE "games" SET "status_id" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["status_id", 1], ["updated_at", "2017-06-19 00:04:05.144021"], ["id", 2]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 49ms (Views: 8.3ms | ActiveRecord: 14.1ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 20:04:07 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:04:08 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 20:04:13 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:04:31 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/games/3" for 127.0.0.1 at 2017-06-18 20:04:44 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"3", "id"=>"3", "game"=>{"status_id"=>"3"}}
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.4ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 14ms (Views: 6.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 20:04:48 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 20:04:57 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 20:04:59 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:05:05 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/games/3" for 127.0.0.1 at 2017-06-18 20:05:15 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"1", "id"=>"3", "game"=>{"status_id"=>"1"}}
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.4ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[33mUPDATE "games" SET "status_id" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["status_id", 1], ["updated_at", "2017-06-19 00:05:15.821180"], ["id", 3]]
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (2.3ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 24ms (Views: 5.9ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 20:05:17 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 20:05:34 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 20:05:37 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 20:06:23 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (1.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 51ms (Views: 29.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:06:26 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 20:06:29 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:06:47 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/games/35" for 127.0.0.1 at 2017-06-18 20:06:57 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"2", "id"=>"35", "game"=>{"status_id"=>"2"}}
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.4ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (21.7ms)[0m  [1m[33mUPDATE "games" SET "status_id" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["status_id", 2], ["updated_at", "2017-06-19 00:06:57.091118"], ["id", 35]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (1.9ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 44ms (Views: 4.5ms | ActiveRecord: 25.0ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 20:07:00 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 20:07:04 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (1.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 20:07:07 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 20:07:09 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 20:07:12 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 20:07:16 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 20:07:21 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 20:07:23 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:07:27 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 20:07:28 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 20:07:32 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 20:07:36 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 20:07:39 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (9.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 16ms (Views: 5.0ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:07:45 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.8ms)
+
+
+Started PUT "/games/4" for 127.0.0.1 at 2017-06-18 20:07:52 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"4", "id"=>"4", "game"=>{"status_id"=>"4"}}
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.2ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (6.5ms)[0m  [1m[33mUPDATE "games" SET "status_id" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["status_id", 4], ["updated_at", "2017-06-19 00:07:52.340428"], ["id", 4]]
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 29ms (Views: 8.3ms | ActiveRecord: 13.3ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 20:07:55 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:08:20 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/games/5" for 127.0.0.1 at 2017-06-18 20:08:40 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"4", "id"=>"5", "game"=>{"status_id"=>"4"}}
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.4ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (12.3ms)[0m  [1m[33mUPDATE "games" SET "status_id" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["status_id", 4], ["updated_at", "2017-06-19 00:08:40.136503"], ["id", 5]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 40ms (Views: 6.3ms | ActiveRecord: 20.1ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 20:08:51 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 20:18:49 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (1.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 42ms (Views: 30.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 20:19:01 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:19:03 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 1.3ms)
+
+
+Started PUT "/games/6" for 127.0.0.1 at 2017-06-18 20:19:10 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"4", "id"=>"6", "game"=>{"status_id"=>"4"}}
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.5ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (2.1ms)[0m  [1m[33mUPDATE "games" SET "status_id" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["status_id", 4], ["updated_at", "2017-06-19 00:19:10.427171"], ["id", 6]]
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (7.0ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 43ms (Views: 8.8ms | ActiveRecord: 16.7ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 20:19:14 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:19:20 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 20:19:33 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:19:37 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/games/7" for 127.0.0.1 at 2017-06-18 20:19:45 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"3", "id"=>"7", "game"=>{"status_id"=>"3"}}
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.5ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (11.7ms)[0m  [1m[33mUPDATE "games" SET "status_id" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["status_id", 3], ["updated_at", "2017-06-19 00:19:45.234047"], ["id", 7]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (2.4ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 32ms (Views: 8.7ms | ActiveRecord: 15.7ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 20:19:50 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 20:19:56 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 20:19:56 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:19:58 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 1.1ms)
+
+
+Started PUT "/games/29" for 127.0.0.1 at 2017-06-18 20:20:20 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"4", "id"=>"29", "game"=>{"status_id"=>"4"}}
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (4.3ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (4.9ms)[0m  [1m[33mUPDATE "games" SET "status_id" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["status_id", 4], ["updated_at", "2017-06-19 00:20:20.679914"], ["id", 29]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 32ms (Views: 7.4ms | ActiveRecord: 12.8ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 20:20:22 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:20:30 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/games/32" for 127.0.0.1 at 2017-06-18 20:20:36 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"4", "id"=>"32", "game"=>{"status_id"=>"4"}}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.2ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (6.3ms)[0m  [1m[33mUPDATE "games" SET "status_id" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["status_id", 4], ["updated_at", "2017-06-19 00:20:36.732556"], ["id", 32]]
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (1.9ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 26ms (Views: 4.5ms | ActiveRecord: 15.1ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 20:20:40 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:20:46 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (6.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 16ms (Views: 8.8ms | ActiveRecord: 6.8ms)
+
+
+Started PUT "/games/1" for 127.0.0.1 at 2017-06-18 20:20:58 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"2", "id"=>"1", "game"=>{"status_id"=>"2"}}
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.3ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 15ms (Views: 7.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 20:21:03 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 20:21:06 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 20:21:08 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:21:23 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 20:21:46 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:21:50 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.7ms)
+
+
+Started PUT "/games/1" for 127.0.0.1 at 2017-06-18 20:21:58 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"3", "id"=>"1", "game"=>{"status_id"=>"3"}}
+  [1m[36mGame Load (0.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.3ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (10.9ms)[0m  [1m[33mUPDATE "games" SET "status_id" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["status_id", 3], ["updated_at", "2017-06-19 00:21:58.206613"], ["id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 36ms (Views: 5.7ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/games" for ::1 at 2017-06-18 20:22:43 -0400
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 35ms (Views: 29.4ms | ActiveRecord: 1.2ms)
+
+
+Started PUT "/games/1" for 127.0.0.1 at 2017-06-18 20:24:37 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"4", "id"=>"1", "game"=>{"status_id"=>"4"}}
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (1.5ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (3.2ms)[0m  [1m[33mUPDATE "games" SET "status_id" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["status_id", 4], ["updated_at", "2017-06-19 00:24:37.989129"], ["id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 67ms (Views: 9.8ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:31:12 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (3.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 46ms (Views: 37.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:31:45 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 55ms (Views: 44.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 20:31:56 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 13ms (Views: 9.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:32:01 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (6.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 54ms (Views: 47.2ms | ActiveRecord: 6.6ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 20:32:10 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"4", "id"=>"undefined", "game"=>{"status_id"=>"4"}}
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 20:32:25 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (14.0ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 22ms (Views: 6.7ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 20:33:22 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (7.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 70ms (Views: 47.8ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:33:27 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 1.4ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 20:33:44 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"4", "id"=>"undefined", "game"=>{"status_id"=>"4"}}
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:44:00 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 43ms (Views: 32.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:46:26 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 40ms (Views: 32.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:54:32 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 50ms (Views: 38.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:55:19 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 20:55:22 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (1.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 20:55:23 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (6.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 11ms (Views: 3.6ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 20:55:23 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 20:55:24 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:55:26 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:55:48 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:56:15 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (6.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 25ms (Views: 17.5ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:56:28 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (12.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 28ms (Views: 15.0ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:57:11 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:57:50 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:58:07 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:58:22 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 20:58:38 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 7ms (Views: 4.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 20:58:40 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 20:58:40 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 20:58:41 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (6.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 11ms (Views: 3.8ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:58:42 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 20:59:36 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (6.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 14ms (Views: 7.5ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:00:37 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 68ms (Views: 43.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/games" for ::1 at 2017-06-18 21:00:55 -0400
+Processing by GamesController#index as HTML
+  [1m[36mGame Load (7.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 22ms (Views: 14.2ms | ActiveRecord: 7.0ms)
+
+
+Started DELETE "/games/32" for 127.0.0.1 at 2017-06-18 21:01:11 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"32"}
+  [1m[36mGame Load (6.7ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (23.8ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 32]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (8.0ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 59ms (Views: 4.4ms | ActiveRecord: 39.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:01:11 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:01:40 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:10:04 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 75ms (Views: 65.9ms | ActiveRecord: 2.0ms)
+
+
+Started DELETE "/games/undefined" for 127.0.0.1 at 2017-06-18 21:10:19 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:10:19 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/games/undefined" for 127.0.0.1 at 2017-06-18 21:10:32 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:10:32 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:10:46 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:12:08 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 67ms (Views: 47.3ms | ActiveRecord: 1.9ms)
+
+
+Started DELETE "/games/35" for 127.0.0.1 at 2017-06-18 21:12:20 -0400
+Processing by GamesController#destroy as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mGame Load (6.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (25.0ms)[0m  [1m[31mDELETE FROM "games" WHERE "games"."id" = $1[0m  [["id", 35]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (2.3ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 54ms (Views: 7.8ms | ActiveRecord: 34.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:12:20 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:14:35 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 51ms (Views: 40.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:15:47 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (7.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 15ms (Views: 7.7ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:25:59 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (3.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 58ms (Views: 41.5ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:28:11 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 50ms (Views: 33.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:30:54 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 58ms (Views: 56.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:31:12 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 16ms (Views: 13.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:33:02 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (8.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 69ms (Views: 49.5ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:36:09 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (7.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 64ms (Views: 47.5ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:36:21 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:39:03 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 59ms (Views: 46.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:39:36 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (12.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 21ms (Views: 8.7ms | ActiveRecord: 12.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:42:30 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (3.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 59ms (Views: 51.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 21:43:57 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (6.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 18ms (Views: 5.2ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:44:00 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 1.1ms)
+
+
+Started PUT "/games/[object%20Event]" for 127.0.0.1 at 2017-06-18 21:44:10 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"2", "id"=>"[object Event]", "game"=>{"status_id"=>"2"}}
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:44:38 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:45:43 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (3.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 31ms (Views: 22.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:45:52 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (11.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 45ms (Views: 32.5ms | ActiveRecord: 11.4ms)
+
+
+Started PUT "/games/[object%20Event]" for 127.0.0.1 at 2017-06-18 21:46:10 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"3", "id"=>"[object Event]", "game"=>{"status_id"=>"3"}}
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:47:04 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (5.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 48ms (Views: 36.7ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:47:16 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (6.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 17ms (Views: 10.3ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:47:26 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:47:33 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (6.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 22ms (Views: 13.7ms | ActiveRecord: 6.4ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 21:47:50 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"2", "id"=>"undefined", "game"=>{"status_id"=>"2"}}
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:50:32 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 46ms (Views: 38.1ms | ActiveRecord: 1.8ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 21:52:03 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"1", "id"=>"undefined", "game"=>{"status_id"=>"1"}}
+  [1m[36mGame Load (7.8ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 58ms (Views: 2.5ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:52:04 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 50ms (Views: 47.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:52:25 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (6.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 20ms (Views: 13.3ms | ActiveRecord: 6.1ms)
+
+
+Started PUT "/games/[object%20Event]" for 127.0.0.1 at 2017-06-18 21:55:00 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"1", "id"=>"[object Event]", "game"=>{"status_id"=>"1"}}
+  [1m[36mGame Load (25.0ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 81ms (Views: 13.8ms | ActiveRecord: 25.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:55:01 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (7.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 77ms (Views: 69.3ms | ActiveRecord: 7.0ms)
+
+
+Started PUT "/games/[object%20Event]" for 127.0.0.1 at 2017-06-18 21:57:16 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"Edit Status", "id"=>"[object Event]", "game"=>{"status_id"=>"Edit Status"}}
+  [1m[36mGame Load (1.2ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 56ms (Views: 2.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 21:57:17 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 22:11:39 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (7.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 87ms (Views: 73.3ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 22:16:27 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (3.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 72ms (Views: 59.5ms | ActiveRecord: 3.8ms)
+
+
+Started PUT "/games/[object%20Event]" for 127.0.0.1 at 2017-06-18 22:16:35 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"Edit Status", "id"=>"[object Event]", "game"=>{"status_id"=>"Edit Status"}}
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 8ms (Views: 2.5ms | ActiveRecord: 0.8ms)
+
+
+Started PUT "/games/[object%20Event]" for 127.0.0.1 at 2017-06-18 22:16:37 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"Edit Status", "id"=>"[object Event]", "game"=>{"status_id"=>"Edit Status"}}
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 22:17:20 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (4.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 120ms (Views: 102.8ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 22:17:29 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (22.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 44ms (Views: 20.8ms | ActiveRecord: 22.9ms)
+
+
+Started PUT "/games/[object%20Event]" for 127.0.0.1 at 2017-06-18 22:19:22 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"Edit Status", "id"=>"[object Event]", "game"=>{"status_id"=>"Edit Status"}}
+  [1m[36mGame Load (11.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 57ms (Views: 4.5ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 22:19:23 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.7ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 22:20:01 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"Edit Status", "id"=>"undefined", "game"=>{"status_id"=>"Edit Status"}}
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 31ms (Views: 3.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 22:20:01 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 30ms (Views: 28.2ms | ActiveRecord: 1.0ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 22:20:04 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"Edit Status", "id"=>"undefined", "game"=>{"status_id"=>"Edit Status"}}
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 22:20:06 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"Edit Status", "id"=>"undefined", "game"=>{"status_id"=>"Edit Status"}}
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 22:21:34 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.7ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 46ms (Views: 43.2ms | ActiveRecord: 1.7ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 22:21:49 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"Edit Status", "id"=>"undefined", "game"=>{"status_id"=>"Edit Status"}}
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 1.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 22:22:24 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 1.0ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 22:22:29 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"Edit Status", "id"=>"undefined", "game"=>{"status_id"=>"Edit Status"}}
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 22:22:44 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 21ms (Views: 18.8ms | ActiveRecord: 0.9ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 22:22:47 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"Edit Status", "id"=>"undefined", "game"=>{"status_id"=>"Edit Status"}}
+  [1m[36mGame Load (1.8ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 22:23:30 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (12.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 24ms (Views: 11.2ms | ActiveRecord: 12.4ms)
+
+
+Started PUT "/games/undefined" for 127.0.0.1 at 2017-06-18 22:23:32 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"Edit Status", "id"=>"undefined", "game"=>{"status_id"=>"Edit Status"}}
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 22:29:35 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.1ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 95ms (Views: 77.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 22:33:02 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (2.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 52ms (Views: 40.1ms | ActiveRecord: 2.8ms)
+
+
+Started PUT "/games/2" for 127.0.0.1 at 2017-06-18 22:33:23 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"1", "id"=>"2", "game"=>{"status_id"=>"1"}}
+  [1m[36mGame Load (7.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (20.5ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (7.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 123ms (Views: 14.0ms | ActiveRecord: 36.7ms)
+
+
+Started PUT "/games/4" for 127.0.0.1 at 2017-06-18 22:33:37 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"Edit Status", "id"=>"4", "game"=>{"status_id"=>"Edit Status"}}
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (11.3ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (5.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mGame Load (12.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 75ms (Views: 7.8ms | ActiveRecord: 30.1ms)
+
+
+Started PUT "/games/5" for 127.0.0.1 at 2017-06-18 22:33:41 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"Edit Status", "id"=>"5", "game"=>{"status_id"=>"Edit Status"}}
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.7ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mGame Load (6.5ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 54ms (Views: 4.7ms | ActiveRecord: 8.3ms)
+
+
+Started PUT "/games/29" for 127.0.0.1 at 2017-06-18 22:33:46 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"Edit Status", "id"=>"29", "game"=>{"status_id"=>"Edit Status"}}
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.2ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mGame Load (23.6ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 36ms (Views: 5.8ms | ActiveRecord: 24.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 22:34:05 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.9ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 1.9ms)
+
+
+Started PUT "/games/2" for 127.0.0.1 at 2017-06-18 22:34:18 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"4", "id"=>"2", "game"=>{"status_id"=>"4"}}
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.4ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (23.4ms)[0m  [1m[33mUPDATE "games" SET "status_id" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["status_id", 4], ["updated_at", "2017-06-19 02:34:18.858694"], ["id", 2]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (2.2ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 58ms (Views: 5.4ms | ActiveRecord: 27.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 22:36:35 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (40.0ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 125ms (Views: 79.0ms | ActiveRecord: 40.0ms)
+
+
+Started PUT "/games/3" for 127.0.0.1 at 2017-06-18 22:36:41 -0400
+Processing by GamesController#update as */*
+  Parameters: {"id"=>"3", "game"=>{}}
+  [1m[36mGame Load (6.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 20ms (Views: 0.2ms | ActiveRecord: 6.6ms)
+
+
+Started PUT "/games/4" for 127.0.0.1 at 2017-06-18 22:36:50 -0400
+Processing by GamesController#update as */*
+  Parameters: {"id"=>"4", "game"=>{}}
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/games/29" for 127.0.0.1 at 2017-06-18 22:37:38 -0400
+Processing by GamesController#update as */*
+  Parameters: {"id"=>"29", "game"=>{}}
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 22:38:49 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (1.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 54ms (Views: 42.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 22:38:54 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.8ms)
+
+
+Started PUT "/games/4" for 127.0.0.1 at 2017-06-18 22:39:00 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"2", "id"=>"4", "game"=>{"status_id"=>"2"}}
+  [1m[36mGame Load (0.9ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (6.4ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (8.7ms)[0m  [1m[33mUPDATE "games" SET "status_id" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["status_id", 2], ["updated_at", "2017-06-19 02:39:00.215017"], ["id", 4]]
+  [1m[35m (8.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (29.9ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 89ms (Views: 8.3ms | ActiveRecord: 54.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 22:39:33 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/games/5" for 127.0.0.1 at 2017-06-18 22:39:54 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"2", "id"=>"5", "game"=>{"status_id"=>"2"}}
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.5ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (25.4ms)[0m  [1m[33mUPDATE "games" SET "status_id" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["status_id", 2], ["updated_at", "2017-06-19 02:39:54.344476"], ["id", 5]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (13.1ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 63ms (Views: 6.0ms | ActiveRecord: 40.3ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 22:40:11 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (6.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 10ms (Views: 3.1ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 22:40:21 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 22:40:24 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (16.1ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 42ms (Views: 25.3ms | ActiveRecord: 16.1ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-18 22:40:26 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (23.2ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 32ms (Views: 8.5ms | ActiveRecord: 23.2ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-18 22:40:26 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (5.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 32ms (Views: 25.3ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 22:40:27 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.5ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-18 22:40:32 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/games/2" for 127.0.0.1 at 2017-06-18 22:40:44 -0400
+Processing by GamesController#update as */*
+  Parameters: {"status_id"=>"1", "id"=>"2", "game"=>{"status_id"=>"1"}}
+  [1m[36mGame Load (10.7ms)[0m  [1m[34mSELECT  "games".* FROM "games" WHERE "games"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStatus Load (0.5ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (20.6ms)[0m  [1m[33mUPDATE "games" SET "status_id" = $1, "updated_at" = $2 WHERE "games"."id" = $3[0m  [["status_id", 1], ["updated_at", "2017-06-19 02:40:44.492850"], ["id", 2]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mGame Load (1.9ms)[0m  [1m[34mSELECT "games".* FROM "games" ORDER BY "games"."id" ASC[0m
+Completed 200 OK in 49ms (Views: 5.0ms | ActiveRecord: 34.4ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-18 22:40:59 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (1.7ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-18 22:41:03 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (5.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 9ms (Views: 2.8ms | ActiveRecord: 5.8ms)
+
+

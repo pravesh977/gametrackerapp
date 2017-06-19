@@ -12,8 +12,20 @@ class GamesCrudComponent extends Component {
         <li>Summary: {this.props.summary}</li>
         <li>Rating: {this.props.rating}</li>  
         <li>Playing Status: {this.props.status_id}</li>
+        <li>game id : {this.props.id}</li>
+        <form onSubmit={event=>this.props.handleEditSubmit(event, this.props.id)}>
+            <select name="status_id" >
+              <option selected disabled>Edit Status</option>
+              <option value="1">Plan To Buy</option>
+              <option value="2">Playing</option>
+              <option value="3">Completed</option>
+              <option value="4">Dropped</option>
+           </select>
+          <input type="submit" value="Edit this"/>
+       </form>  
         <button onClick={()=>{this.props.handleDelete(this.props.id)}}>Delete From List</button>
-        <button onClick={()=>this.props.editClicked(console.log(this.props.id))}>Change Game Status</button>
+        {/*<button onClick={()=>{this.props.handleEditSubmit(this.props.id)}}>Edit This</button>*/}
+        
       </div>
     )
   }
