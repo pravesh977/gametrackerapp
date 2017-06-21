@@ -88,7 +88,7 @@ class App extends Component {
                   value = {this.state.inputgamesearch}
                   onChange = {this.handleGameSearchChange}
                   placeholder = "Enter Game Name" /><br/><br/>
-          <input type="submit" value ="search game" />
+          <input type="submit" value ="Search Games" />
         </form> 
       <MyGamesList/>
         {this.searchedRender()}

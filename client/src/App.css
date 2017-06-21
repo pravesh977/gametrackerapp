@@ -24,7 +24,10 @@ body {
 }
 .secondSearchForm {
   text-align:center;
-  font-size: 50px;
+  font-size: 28px;
+}
+.secondSearchForm input{
+  font-size: 28px;
 }
 .secondSearchForm input {
   font-size: 30px;

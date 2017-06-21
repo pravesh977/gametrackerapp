@@ -11,8 +11,6 @@ class SearchedList extends Component {
     this.addToDb = this.addToDb.bind(this);
   }
 
-
-
   handleSecondFetchButtons(event) {
     event.preventDefault();
     //console.log('hey hey', this.props.searchedgameid);
@@ -39,6 +37,23 @@ class SearchedList extends Component {
     // {this.addToDb()}
   }
 
+  // handleGameSubmit(event) {
+  //   event.preventDefault();
+  //   console.log(this.state.gamestatus);
+
+  //   fetch('/fetchingroute', {
+  //     method: 'POST',
+  //     headers: {'Content-Type': 'application/json'},
+  //     body: JSON.stringify({
+  //       // gamedata: {
+  //         inputgamesearch: this.state.inputgamesearch,
+  //        
+  //       // }
+  //     })    
+  //   }).catch(err => console.log('boooohooooo ',err))
+  //   this.setState({gameAdded: true})   
+  // }
+
   addToDb() {
     if(this.state.gameDetailsLoaded===true){
     return (
@@ -53,7 +68,8 @@ class SearchedList extends Component {
       <div className="secondSearchForm">
         {/*<li className="searchedlistclass"><button>{this.props.searchedname}</button></li>*/}
         <form onSubmit = {this.handleSecondFetchButtons} >
-        <input type = "submit" value={this.props.searchedname}/>
+        <input type = "submit" value={this.props.searchedname} />
+
         </form>
         {this.addToDb()}
       </div>
