@@ -8915,3 +8915,47 @@ Processing by GamesController#index as */*
 Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/games" for 127.0.0.1 at 2017-06-21 11:15:59 -0400
+Started GET "/planning" for 127.0.0.1 at 2017-06-21 11:16:00 -0400
+  [1m[35m (5.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (5.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GamesController#planning as */*
+Processing by GamesController#index as */*
+  [1m[36mGame Load (35.9ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+  [1m[36mGame Load (52.5ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 77ms (Views: 11.2ms | ActiveRecord: 65.5ms)
+
+
+Completed 200 OK in 91ms (Views: 22.1ms | ActiveRecord: 54.4ms)
+
+
+Started GET "/playing" for 127.0.0.1 at 2017-06-21 11:16:01 -0400
+Processing by GamesController#playing as */*
+  [1m[36mGame Load (0.6ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 2]]
+Completed 200 OK in 11ms (Views: 5.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/planning" for 127.0.0.1 at 2017-06-21 11:16:02 -0400
+Processing by GamesController#planning as */*
+  [1m[36mGame Load (0.4ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 1]]
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2017-06-21 11:16:02 -0400
+Processing by GamesController#index as */*
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games"[0m
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/completed" for 127.0.0.1 at 2017-06-21 11:16:03 -0400
+Processing by GamesController#completed as */*
+  [1m[36mGame Load (0.8ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 3]]
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dropped" for 127.0.0.1 at 2017-06-21 11:16:04 -0400
+Processing by GamesController#dropped as */*
+  [1m[36mGame Load (0.3ms)[0m  [1m[34mSELECT "games".* FROM "games" WHERE "games"."status_id" = $1[0m  [["status_id", 4]]
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+

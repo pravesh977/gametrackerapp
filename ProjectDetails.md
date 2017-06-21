@@ -1,0 +1,3 @@
+I have always liked playing videogames but keep losing track of all the games that i want to buy or play or have played. This app allows me to search games from an online videogames database igdb(https://www.igdb.com/api) and then save the game details on my own database with status of "planning to buy", "playing", "completed" and "dropped". After, lets say, i have finished playing a game, i could change the status from "playing" to "completed" and when i navigate to that particular section, it would list all the games in my database with that status.
+I am using React on front-end and Rails on back-end.
+
